@@ -122,7 +122,7 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		//completeAssignment.clickSaveButton();
-		//System.out.println("Test data");
+		
 	}
 	
 	
