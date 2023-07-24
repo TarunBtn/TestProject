@@ -75,7 +75,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickClearFilterSkill();
 		testUtil.testWaitFour();
-		assignmentsPageFree.cancelSkill();
+		assignmentsPageFree.clickCancelSkill();
 		testUtil.testWaitFour();
 		//Duration
 		assignmentsPageFree.clickDuration();
