@@ -73,7 +73,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickSkillTab();
 		testUtil.testWaitFour();
-		assignmentsPageFree.resetSkillFilter();
+		assignmentsPageFree.clickClearFilterSkill();
 		testUtil.testWaitFour();
 		assignmentsPageFree.cancelSkill();
 		testUtil.testWaitFour();
