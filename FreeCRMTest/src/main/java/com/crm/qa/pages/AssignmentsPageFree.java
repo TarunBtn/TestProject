@@ -133,11 +133,11 @@ public class AssignmentsPageFree extends TestBase{
 		enterValue.sendKeys(value);
 	}
 	
-	public void selectValue() {
+	public void selectAssignmentsValue() {
 		selectValue.click();
 	}
 	
-	public void clearFilter() {
+	public void clearAssignmentsFilter() {
 		clearFilter.click();
 	}
 	

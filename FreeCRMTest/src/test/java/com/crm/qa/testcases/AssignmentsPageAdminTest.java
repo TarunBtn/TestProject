@@ -38,9 +38,9 @@ public class AssignmentsPageAdminTest extends TestBase{
 		testUtil.testWaitEight();
 		assignmentsPageFree.enterAssignmentsName("QA EngineerEight");
 		testUtil.testWaitFour();
-		assignmentsPageFree.selectValue();
+		assignmentsPageFree.selectAssignmentsValue();
 		testUtil.testWaitFour();
-		assignmentsPageFree.clearFilter();
+		assignmentsPageFree.clearAssignmentsFilter();
 		testUtil.testWaitFour();
 		//Sector
 		assignmentsPageFree.clickSectorTab();
