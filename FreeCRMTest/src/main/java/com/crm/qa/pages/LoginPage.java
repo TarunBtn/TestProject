@@ -55,6 +55,14 @@ public class LoginPage extends TestBase{
 		return new HomePageFree();
 	}
 	
+	public HomePageAdmin loginHomePageAdmin(String un, String pwd) {
+		username.sendKeys(un);
+		password.sendKeys(pwd);
+		loginBtn.click();
+		
+		return new HomePageAdmin();
+	}
+	
 	public void enterUserName() {
 		username.sendKeys("lb+acc-opdrachtgever@nowonline.nl");
 	}
