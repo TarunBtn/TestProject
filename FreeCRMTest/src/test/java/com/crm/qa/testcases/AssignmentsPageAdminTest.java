@@ -92,6 +92,19 @@ public class AssignmentsPageAdminTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickDuration();
 		testUtil.testWaitTwo();
+		//Work & Thinking level
+        assignmentsPageFree.clickWorkAndThinkingLevel();
+        testUtil.testWaitTwo();
+	    assignmentsPageFree.selectWorkAndThinkingLevel();
+	    testUtil.testWaitFour();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
+	    testUtil.testWaitTwo();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
+	    testUtil.testWaitTwo();
+	    assignmentsPageFree.selectWorkAndThinkingLevel();
+	    testUtil.testWaitFour();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
+	    testUtil.testWaitTwo();
 		
 		
 		
