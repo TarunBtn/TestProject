@@ -10,6 +10,15 @@ import com.crm.qa.base.TestBase;
 public class AssignmentsPageFree extends TestBase{
 	
 	//Page factory OR Object Repository
+	@FindBy(xpath="/html/body/div[1]/main/div/nav/div[1]/div[1]/div[1]/input")
+	WebElement enterValue;
+		
+	@FindBy(xpath="/html/body/div[1]/main/div/nav/div[1]/div[1]/div[2]/a[1]/div[2]/div/div[1]/span/span")
+	WebElement selectValue;
+		
+	@FindBy(xpath="//*[@id=\"filter\"]/div[1]/div[2]/span")
+	WebElement clearFilter;
+	
 	@FindBy(id="dropdown-sector")
 	WebElement sector;
 		
@@ -118,6 +127,18 @@ public class AssignmentsPageFree extends TestBase{
 	//Actions
 	public String assignmentsPageTitle() {
 		return Driver.getTitle();
+	}
+	
+	public void enterAssignmentsName(String value) {
+		enterValue.sendKeys(value);
+	}
+	
+	public void selectValue() {
+		selectValue.click();
+	}
+	
+	public void clearFilter() {
+		clearFilter.click();
 	}
 	
 	public void clickSectorTab() {
