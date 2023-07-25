@@ -194,7 +194,7 @@ public class AssignmentsPageFree extends TestBase{
 		selectDuration.click();
 	}
 		
-	public void workAndThinkingLevel() {
+	public void clickWorkAndThinkingLevel() {
 		workAndThinkingLevel.click();
 	}
 		

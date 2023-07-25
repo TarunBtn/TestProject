@@ -2,17 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-24T18:53:33 IST" name="Default suite" finished-at="2023-07-24T18:53:33 IST" duration-ms="35">
+  <suite started-at="2023-07-25T17:09:56 IST" name="Default suite" finished-at="2023-07-25T17:10:08 IST" duration-ms="12763">
     <groups>
     </groups>
-    <test started-at="2023-07-24T18:53:33 IST" name="Default test" finished-at="2023-07-24T18:53:33 IST" duration-ms="35">
-      <class name="com.crm.qa.testcases.BusinessesPageFreeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.BusinessesPageFreeTest@2d52216b]" started-at="2023-07-24T18:53:33 IST" name="setUp" finished-at="2023-07-24T18:53:33 IST" duration-ms="4" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+    <test started-at="2023-07-25T17:09:56 IST" name="Default test" finished-at="2023-07-25T17:10:08 IST" duration-ms="12763">
+      <class name="com.crm.qa.testcases.AssignmentsPageAdminTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.AssignmentsPageAdminTest@273e7444]" started-at="2023-07-25T17:09:56 IST" name="setUp" finished-at="2023-07-25T17:10:08 IST" duration-ms="12715" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.crm.qa.base.TestBase.initialization(TestBase.java:39)
-at com.crm.qa.testcases.BusinessesPageFreeTest.setUp(BusinessesPageFreeTest.java:26)
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.crm.qa.pages.LoginPage.loginHomePageAdmin(LoginPage.java:59)
+at com.crm.qa.testcases.AssignmentsPageAdminTest.setUp(AssignmentsPageAdminTest.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,16 +57,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="businessesPageFree()[pri:0, instance:com.crm.qa.testcases.BusinessesPageFreeTest@2d52216b]" started-at="2023-07-24T18:53:33 IST" name="businessesPageFree" finished-at="2023-07-24T18:53:33 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="assignmentsPage()[pri:0, instance:com.crm.qa.testcases.AssignmentsPageAdminTest@273e7444]" started-at="2023-07-25T17:10:08 IST" name="assignmentsPage" finished-at="2023-07-25T17:10:08 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.crm.qa.base.TestBase.initialization(TestBase.java:39)
-at com.crm.qa.testcases.BusinessesPageFreeTest.setUp(BusinessesPageFreeTest.java:26)
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+at com.crm.qa.pages.LoginPage.loginHomePageAdmin(LoginPage.java:59)
+at com.crm.qa.testcases.AssignmentsPageAdminTest.setUp(AssignmentsPageAdminTest.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,15 +111,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- businessesPageFree -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.BusinessesPageFreeTest@2d52216b]" started-at="2023-07-24T18:53:33 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690205013270" status="SKIP">
+        </test-method> <!-- assignmentsPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.AssignmentsPageAdminTest@273e7444]" started-at="2023-07-25T17:10:08 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1690285208818" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.BusinessesPageFreeTest -->
+      </class> <!-- com.crm.qa.testcases.AssignmentsPageAdminTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

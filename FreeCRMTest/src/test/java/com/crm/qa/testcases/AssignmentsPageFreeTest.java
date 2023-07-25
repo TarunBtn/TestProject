@@ -91,17 +91,17 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.clickDuration();
 		testUtil.testWaitFour();
 		//WorkAndThinkingLevel
-		assignmentsPageFree.workAndThinkingLevel();
+		assignmentsPageFree.clickWorkAndThinkingLevel();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.selectWorkAndThinkingLevel();
 		testUtil.testWaitFour();
-		assignmentsPageFree.workAndThinkingLevel();
+		assignmentsPageFree.clickWorkAndThinkingLevel();
 		testUtil.testWaitTwo();
-		assignmentsPageFree.workAndThinkingLevel();
+		assignmentsPageFree.clickWorkAndThinkingLevel();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectWorkAndThinkingLevel();
 		testUtil.testWaitFour();
-		assignmentsPageFree.workAndThinkingLevel();
+		assignmentsPageFree.clickWorkAndThinkingLevel();
 		testUtil.testWaitFour();
 		//Hours
 		assignmentsPageFree.clickHoursTab();
