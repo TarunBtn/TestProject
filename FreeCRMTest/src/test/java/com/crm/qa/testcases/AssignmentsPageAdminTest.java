@@ -84,6 +84,10 @@ public class AssignmentsPageAdminTest extends TestBase{
 		testUtil.testWaitTwo();
 		assignmentsPageFree.selectDuration();
 		testUtil.testWaitFour();
+		assignmentsPageFree.clickDuration();
+		testUtil.testWaitTwo();
+		assignmentsPageFree.clickDuration();
+		testUtil.testWaitTwo();
 		assignmentsPageFree.selectDuration();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickDuration();
