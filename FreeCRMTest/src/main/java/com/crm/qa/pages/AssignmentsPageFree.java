@@ -72,7 +72,10 @@ public class AssignmentsPageFree extends TestBase{
 		
 	@FindBy(id="dropdown-uren-reset")
 	WebElement resetHoursFilter;
-		
+	//
+	@FindBy(id="dropdown-uren-cancel")
+	WebElement cancelHours;
+	
 	@FindBy(id="dropdown-uurtarief-btn")
 	WebElement hourlyRate;
 		
@@ -83,8 +86,11 @@ public class AssignmentsPageFree extends TestBase{
 	WebElement applyHourlyRateFilter;
 		
 	@FindBy(id="dropdown-uurtarief-reset")
-	WebElement resetHourlyRateFilter;
-		
+	WebElement resetHourlyRateFilter;	
+	//
+	@FindBy(id="dropdown-uurtarief-cancel")
+	WebElement cancelHourlyRate;
+	
 	@FindBy(xpath="//*[@id=\"custom-location-and-distance-location\"]/span")
 	WebElement location;
 		
@@ -96,7 +102,10 @@ public class AssignmentsPageFree extends TestBase{
 		
 	@FindBy(id="dropdown-location-and-distance-reset")
 	WebElement resetLocation;
-		
+	//
+	@FindBy(id="dropdown-location-and-distance-cancel")
+	WebElement cancelLocation;
+	
 	@FindBy(xpath="//*[@id=\"toggle-bookmark\"]/button")
 	WebElement viewMatches;
 		
@@ -216,8 +225,12 @@ public class AssignmentsPageFree extends TestBase{
 	public void resetHoursFilter() {
 		resetHoursFilter.click();
 	}
+	//
+	public void clickCancelHours() {
+		cancelHours.click();
+	}
 		
-	public void hourlyRate() {
+	public void clickHourlyRateTab() {
 		hourlyRate.click();
 	}
 		
@@ -231,6 +244,10 @@ public class AssignmentsPageFree extends TestBase{
 		
 	public void resetHourlyRateFilter() {
 		resetHourlyRateFilter.click();
+	}
+	//
+	public void clickCancelHourlyRate() {
+		cancelHourlyRate.click();
 	}
 		
 	public void clickLocationTab() {
@@ -251,6 +268,10 @@ public class AssignmentsPageFree extends TestBase{
 		
 	public void resetLocation() {
 		resetLocation.click();
+	}
+	//
+	public void clickCancelLocation() {
+		cancelLocation.click();
 	}
 		
 	public void viewMatches() {

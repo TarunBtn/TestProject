@@ -114,17 +114,25 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetHoursFilter();
 		testUtil.testWaitFour();
+		assignmentsPageFree.clickHoursTab();
+		testUtil.testWaitTwo();
+		assignmentsPageFree.clickCancelHours();
+		testUtil.testWaitTwo();
 		//Hourly rate
-		assignmentsPageFree.hourlyRate();
+		assignmentsPageFree.clickHourlyRateTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectHourlyRate();
 		testUtil.testWaitFour();
 		assignmentsPageFree.applyHourlyRateFilter();
 		testUtil.testWaitFour();
-		assignmentsPageFree.hourlyRate();
+		assignmentsPageFree.clickHourlyRateTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetHourlyRateFilter();
 		testUtil.testWaitFour();
+		assignmentsPageFree.clickHourlyRateTab();
+		testUtil.testWaitTwo();
+		assignmentsPageFree.clickCancelHourlyRate();
+		testUtil.testWaitTwo();
 		//Location
 		assignmentsPageFree.clickLocationTab();
 		testUtil.testWaitTwo();
@@ -138,6 +146,10 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetLocation();
 		testUtil.testWaitFour();
+		assignmentsPageFree.clickLocationTab();
+		testUtil.testWaitTwo();
+		assignmentsPageFree.clickCancelLocation();
+		testUtil.testWaitTwo();
 		//View matches
 		assignmentsPageFree.viewMatches();
 		testUtil.testWaitFour();
