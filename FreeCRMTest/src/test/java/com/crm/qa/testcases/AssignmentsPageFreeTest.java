@@ -24,9 +24,9 @@ public class AssignmentsPageFreeTest extends TestBase{
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
-		loginPage=new LoginPage();
-		testUtil=new TestUtil();
+		loginPage=new LoginPage();		
 		assignmentsPageFree=new AssignmentsPageFree();
+		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
 		testUtil.testWaitEight();
 		homePageFree.clickAcceptAllCookies();

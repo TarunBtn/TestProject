@@ -24,9 +24,10 @@ public class HomePageAdminTest extends TestBase{
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
-		loginPage=new LoginPage();
-		testUtil=new TestUtil();
+		loginPage=new LoginPage();		
 		assignmentsPageAdmin=new AssignmentsPageAdmin();
+		testUtil=new TestUtil();
+		testUtil.testWaitTwo();
 		loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
 		testUtil.testWaitEight();
 		homePageAdmin.clickAcceptAllCookies();
