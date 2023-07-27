@@ -34,8 +34,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEight();
-		//
-		assignmentsPageAdmin=homePageAdmin.clickAssignmentsTab();
+		homePageAdmin.clickAssignmentsTab();
 		testUtil.testWaitEight();
 		assignmentsPageFree.enterAssignmentsName("QA EngineerEight");
 		testUtil.testWaitFour();

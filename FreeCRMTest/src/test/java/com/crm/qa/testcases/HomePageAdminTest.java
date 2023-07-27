@@ -14,7 +14,6 @@ import com.crm.qa.util.TestUtil;
 public class HomePageAdminTest extends TestBase{
 	
 	LoginPage loginPage;
-	HomePageFree homePageFree;
 	HomePageAdmin homePageAdmin;
 	AssignmentsPageAdmin assignmentsPageAdmin;
 	TestUtil testUtil;
@@ -27,7 +26,6 @@ public class HomePageAdminTest extends TestBase{
 	public void setUp()throws Exception {
 		initialization();
 		loginPage=new LoginPage();
-		homePageFree=new HomePageFree();
 		assignmentsPageAdmin=new AssignmentsPageAdmin();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
@@ -39,7 +37,7 @@ public class HomePageAdminTest extends TestBase{
 	@Test
 	public void test()throws Exception {
 		//testUtil.testWaitEight();
-		homePageAdmin.clickAssignmentsTab();
+		assignmentsPageAdmin=homePageAdmin.clickAssignmentsTab();
 		testUtil.testWaitFour();
 	}
 	
