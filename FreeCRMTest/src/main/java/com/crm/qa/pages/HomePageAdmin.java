@@ -29,11 +29,13 @@ public class HomePageAdmin extends TestBase{
 	//Actions
 	public AssignmentsPageAdmin clickAssignmentsTab() {
 		assignmentsTab.click();
+		
 		return new AssignmentsPageAdmin();
 	}
 		
 	public CommunityPageAdmin clickCommunityPageAdmin() {
 		communityTab.click();
+		
 		return new CommunityPageAdmin();
 	}
 		
