@@ -46,7 +46,7 @@ public class MyAssignmentsPageTest extends TestBase{
 	
 	@Test(priority=1)
 	public void myAssignmentsPageTest()throws Exception {
-		/*myAssignmentsPage.enterValueInFilter();
+		myAssignmentsPage.enterValueInFilter();
 		testUtil.testWaitFour();
 		myAssignmentsPage.clickResetFilter();
 		testUtil.testWaitEight();
@@ -63,7 +63,7 @@ public class MyAssignmentsPageTest extends TestBase{
 		myAssignmentsPage.selectStatusFromDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.StatusDropDown();
-		testUtil.testWaitFour();*/
+		testUtil.testWaitFour();
 		
 	}
 	

@@ -45,7 +45,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 	@Test
 	public void clickFiltersTest()throws Exception {
 		//Sector
-		/*assignmentsPageFree.clickSectorTab();
+		assignmentsPageFree.clickSectorTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectSector();
 		testUtil.testWaitFour();
@@ -170,7 +170,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.selectByNumberOfHours();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectPublicationDateNewFirst();
-		testUtil.testWaitFour();*/
+		testUtil.testWaitFour();
 		
 	}
 	

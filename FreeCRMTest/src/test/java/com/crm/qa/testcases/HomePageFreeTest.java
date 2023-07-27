@@ -36,7 +36,7 @@ public class HomePageFreeTest extends TestBase{
 	
 	@Test
 	public void clickAssignmentLinkTest()throws Exception {
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		assignmentsPageFree=homePageFree.clickAssignmentsLink();
 		testUtil.testWaitFour();
 			

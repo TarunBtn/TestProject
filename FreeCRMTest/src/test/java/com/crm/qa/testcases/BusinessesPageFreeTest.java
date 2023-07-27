@@ -38,7 +38,7 @@ public class BusinessesPageFreeTest extends TestBase{
 	
 	@Test
 	public void businessesPageFree()throws Exception {
-		/*businessesPageFree.clickSector();
+		businessesPageFree.clickSector();
 		testUtil.testWaitTwo();
 		businessesPageFree.selectSector();
 		testUtil.testWaitFour();
@@ -61,7 +61,7 @@ public class BusinessesPageFreeTest extends TestBase{
 		businessesPageFree.sortingAtoZ();
 		testUtil.testWaitFour();
 		businessesPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();*/
+		testUtil.testWaitTwo();
 		
 	}
 	

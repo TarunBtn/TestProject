@@ -40,7 +40,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 	
 	@Test
 	public void entrepreneurPageFilter()throws Exception {
-		/*entrepreneursPageFree.enterEntrepreneur("Ajay");
+		entrepreneursPageFree.enterEntrepreneur("Ajay");
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickCancel();
 		testUtil.testWaitFour();
@@ -87,7 +87,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		entrepreneursPageFree.selectSortingAtoZ();
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();*/
+		testUtil.testWaitTwo();
 		
 	}
 	
