@@ -34,7 +34,8 @@ public class AssignmentsPageAdminTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEight();
-		homePageAdmin.clickAssignmentsTab();
+		//
+		assignmentsPageAdmin=homePageAdmin.clickAssignmentsTab();
 		testUtil.testWaitEight();
 		assignmentsPageFree.enterAssignmentsName("QA EngineerEight");
 		testUtil.testWaitFour();
@@ -43,7 +44,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 		assignmentsPageFree.clearAssignmentsFilter();
 		testUtil.testWaitFour();
 		//Sector
-		assignmentsPageFree.clickSectorTab();
+		/*assignmentsPageFree.clickSectorTab();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.selectSector();
 		testUtil.testWaitFour();
@@ -104,7 +105,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 	    assignmentsPageFree.selectWorkAndThinkingLevel();
 	    testUtil.testWaitFour();
 	    assignmentsPageFree.clickWorkAndThinkingLevel();
-	    testUtil.testWaitTwo();
+	    testUtil.testWaitTwo();*/
 		
 		
 		

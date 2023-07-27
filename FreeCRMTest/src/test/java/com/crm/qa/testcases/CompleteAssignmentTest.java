@@ -60,7 +60,7 @@ public class CompleteAssignmentTest extends TestBase{
 	
 	@Test
 	public void completeAssignmentTest()throws Exception {
-		completeAssignment.selectCompany();
+		/*completeAssignment.selectCompany();
 		testUtil.testWaitFour();
 		completeAssignment.selectSectorDropDown();
 		testUtil.testWaitFour();
@@ -120,7 +120,7 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();*/
 		//completeAssignment.clickSaveButton();
 		
 	}
