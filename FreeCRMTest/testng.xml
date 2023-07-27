@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-    <class name="com.crm.qa.testcases.AssignmentsPageAdminTest"/>
-      <!--  <class name="com.crm.qa.testcases.LoginPageTest"/>
+      <class name="com.crm.qa.testcases.LoginPageTest"/>
       <class name="com.crm.qa.testcases.HomePageTest"/>
       <class name="com.crm.qa.testcases.AddCommandPageTest"/>
       <class name="com.crm.qa.testcases.CheckCommandPageTest"/>
@@ -16,7 +15,8 @@
       <class name="com.crm.qa.testcases.CommunityPageFreeTest"/>
       <class name="com.crm.qa.testcases.MyNetworkPageFreeTest"/>
       <class name="com.crm.qa.testcases.EntrepreneursPageFreeTest"/>
-      <class name="com.crm.qa.testcases.BusinessesPageFreeTest"/>-->
+      <class name="com.crm.qa.testcases.BusinessesPageFreeTest"/>
+      <class name="com.crm.qa.testcases.AssignmentsPageAdminTest"/>
       
     </classes>
   </test> <!-- Test -->

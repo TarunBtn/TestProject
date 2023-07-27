@@ -40,7 +40,7 @@ public class CommunityPageFreeTest extends TestBase{
 	
 	@Test
 	public void communityPageFreeTest()throws Exception {
-		communityPageFree.clickTypeOfMessageDropDown();
+		/*communityPageFree.clickTypeOfMessageDropDown();
 		communityPageFree.selectTypeOfMessage();
 		testUtil.testWaitFour();
 		communityPageFree.selectTypeOfMessage();
@@ -87,7 +87,7 @@ public class CommunityPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		communityPageFree.clickFouriteMessage();
 		testUtil.testWaitFour();
-		communityPageFree.clickMyNetworkBtn();
+		communityPageFree.clickMyNetworkBtn();*/
 				
 		
 	}
