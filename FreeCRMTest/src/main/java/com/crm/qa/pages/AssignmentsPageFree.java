@@ -274,11 +274,11 @@ public class AssignmentsPageFree extends TestBase{
 		cancelLocation.click();
 	}
 		
-	public void viewMatches() {
+	public void clickViewMatches() {
 		viewMatches.click();
 	}
 		
-	public void favorites() {
+	public void clickFavorites() {
 		favorites.click();
 	}
 	

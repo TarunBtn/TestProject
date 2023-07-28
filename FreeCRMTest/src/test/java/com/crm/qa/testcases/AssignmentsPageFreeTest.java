@@ -151,14 +151,14 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.clickCancelLocation();
 		testUtil.testWaitTwo();
 		//View matches
-		assignmentsPageFree.viewMatches();
+		assignmentsPageFree.clickViewMatches();
 		testUtil.testWaitFour();
-		assignmentsPageFree.viewMatches();
+		assignmentsPageFree.clickViewMatches();
 		testUtil.testWaitFour();
 		//Favourites
-		assignmentsPageFree.favorites();
+		assignmentsPageFree.clickFavorites();
 		testUtil.testWaitFour();
-		assignmentsPageFree.favorites();
+		assignmentsPageFree.clickFavorites();
 		testUtil.testWaitFour();
 		//Sorting
 		assignmentsPageFree.clickSortingDropDown();
