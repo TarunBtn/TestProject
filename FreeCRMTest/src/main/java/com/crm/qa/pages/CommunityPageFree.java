@@ -34,7 +34,7 @@ public class CommunityPageFree extends TestBase{
 	WebElement selectSector;
 	
 	@FindBy(xpath="//*[@id='dropdown-geplaast']/button")
-	WebElement clickMyOwnNetwork;
+	WebElement clickEveryoneNetwork;
 	
 	@FindBy(xpath="//*[@id=\"post-zichtbaarheidvanpost\"]/form/div[1]/label")
 	WebElement selectOwnNetwork;
@@ -92,7 +92,7 @@ public class CommunityPageFree extends TestBase{
 	}
 	
 	public void clickEveryoneDropDown() {
-		clickMyOwnNetwork.click();
+		clickEveryoneNetwork.click();
 	}
 	
 	public void selectMyOwnNetwork() {
