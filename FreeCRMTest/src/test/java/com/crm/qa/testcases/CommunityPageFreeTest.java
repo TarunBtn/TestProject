@@ -41,6 +41,7 @@ public class CommunityPageFreeTest extends TestBase{
 	@Test
 	public void communityPageFreeTest()throws Exception {
 		communityPageFree.clickTypeOfMessageDropDown();
+		testUtil.testWaitTwo();
 		communityPageFree.selectTypeOfMessage();
 		testUtil.testWaitFour();
 		communityPageFree.selectTypeOfMessage();
