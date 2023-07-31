@@ -9,6 +9,12 @@ import com.crm.qa.base.TestBase;
 public class CommunityPageFree extends TestBase{
 	
 	//Page factory OR Object Repository
+	@FindBy(id="filter-search-input")
+	WebElement valueFilter;
+	
+	@FindBy(xpath="//*[@id=\"filter\"]/div[1]/div/span")
+	WebElement cancelSign;
+	
 	@FindBy(id="dropdown-post-type")
 	WebElement typeOfMessageDropDown;
 	
@@ -49,6 +55,18 @@ public class CommunityPageFree extends TestBase{
 	}
 	
 	//Action
+	public void clickValueFilter() {
+		valueFilter.click();
+	}
+	
+	public void enterValueFilter(String value) {
+		valueFilter.sendKeys(value);
+	}
+	
+	public void clickCancelSign() {
+		cancelSign.click();
+	}
+	
 	public void clickTypeOfMessageDropDown() {
 		typeOfMessageDropDown.click();
 	}
