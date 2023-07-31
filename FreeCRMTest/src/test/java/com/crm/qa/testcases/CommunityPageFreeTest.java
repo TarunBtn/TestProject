@@ -68,7 +68,7 @@ public class CommunityPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		communityPageFree.clickSectorTab();
 		testUtil.testWaitFour();
-		communityPageFree.clickMyOwnNetworkDropDown();
+		communityPageFree.clickEveryoneDropDown();
 		testUtil.testWaitFour();
 		communityPageFree.selectMyOwnNetwork();
 		testUtil.testWaitFour();
@@ -82,7 +82,7 @@ public class CommunityPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		communityPageFree.selectEveryOneNetwork();
 		testUtil.testWaitFour();
-		communityPageFree.clickMyOwnNetworkDropDown();
+		communityPageFree.clickEveryoneDropDown();
 		testUtil.testWaitFour();
 		communityPageFree.clickFouriteMessage();
 		testUtil.testWaitFour();

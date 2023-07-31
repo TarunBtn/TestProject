@@ -91,7 +91,7 @@ public class CommunityPageFree extends TestBase{
 		selectSector.click();
 	}
 	
-	public void clickMyOwnNetworkDropDown() {
+	public void clickEveryoneDropDown() {
 		clickMyOwnNetwork.click();
 	}
 	
