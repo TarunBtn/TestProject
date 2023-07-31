@@ -99,7 +99,7 @@ public class CommunityPageFree extends TestBase{
 		selectOwnNetwork.click();
 	}
 	
-	public void selectEveryOneNetwork() {
+	public void selectEveryoneNetwork() {
 		selectEveryOne.click();
 	}
 	

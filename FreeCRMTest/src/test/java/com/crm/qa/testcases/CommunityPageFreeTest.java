@@ -80,7 +80,7 @@ public class CommunityPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollUp();
 		testUtil.testWaitFour();
-		communityPageFree.selectEveryOneNetwork();
+		communityPageFree.selectEveryoneNetwork();
 		testUtil.testWaitFour();
 		communityPageFree.clickEveryoneDropDown();
 		testUtil.testWaitFour();
