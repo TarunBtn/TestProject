@@ -19,6 +19,7 @@
       <class name="com.crm.qa.testcases.HomePageAdminTest"/>
       <class name="com.crm.qa.testcases.AssignmentsPageAdminTest"/>
       <class name="com.crm.qa.testcases.CommunityPageAdminTest"/>
+      <class name="com.crm.qa.testcases.MatchPageAdminTest"/>
       
     </classes>
   </test> <!-- Test -->
