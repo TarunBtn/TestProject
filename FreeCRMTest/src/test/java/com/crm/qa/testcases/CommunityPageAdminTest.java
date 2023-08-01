@@ -37,6 +37,11 @@ public class CommunityPageAdminTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageAdmin.clickCommunityPageAdmin();
 		testUtil.testWaitEight();
+						
+	}
+	
+	@Test
+	public void community() throws Exception{
 		//CommunityPage
 		communityPageFree.clickValueFilter();
 		testUtil.testWaitTwo();
@@ -86,13 +91,6 @@ public class CommunityPageAdminTest extends TestBase{
 		communityPageFree.clickFouriteMessage();
 		testUtil.testWaitFour();
 		
-		
-	}
-	
-	@Test
-	public void community() throws Exception{
-		
-		System.out.println("Script run as expected");
 				
 	}
 	

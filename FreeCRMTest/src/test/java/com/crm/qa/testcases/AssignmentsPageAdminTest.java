@@ -36,6 +36,12 @@ public class AssignmentsPageAdminTest extends TestBase{
 		testUtil.testWaitEight();
 		homePageAdmin.clickAssignmentsTab();
 		testUtil.testWaitEight();
+							
+	}
+	
+	@Test
+	public void assignmentsPage()throws Exception {	
+		//ValueFilterAssignment
 		assignmentsPageFree.enterAssignmentsName("QA EngineerEight");
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectAssignmentsValue();
@@ -173,15 +179,6 @@ public class AssignmentsPageAdminTest extends TestBase{
 	  	testUtil.testWaitEight();
 	  	assignmentsPageFree.clickSortingDropDown();
 	  	testUtil.testWaitTwo();
-		
-		
-		
-				
-	}
-	
-	@Test
-	public void assignmentsPage() {		
-		
 	}
 	
 	@AfterMethod
