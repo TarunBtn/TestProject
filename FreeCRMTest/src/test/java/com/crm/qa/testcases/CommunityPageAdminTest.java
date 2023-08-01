@@ -71,7 +71,20 @@ public class CommunityPageAdminTest extends TestBase{
 		testUtil.testWaitFour();
 		communityPageFree.clickSectorTab();
 		testUtil.testWaitTwo();
-		
+		//EveryOne
+		communityPageFree.clickEveryoneDropDown();
+		testUtil.testWaitTwo();
+		communityPageFree.selectMyOwnNetwork();
+		testUtil.testWaitFour();
+		communityPageFree.selectEveryoneNetwork();
+		testUtil.testWaitFour();
+		communityPageFree.clickEveryoneDropDown();
+		testUtil.testWaitTwo();
+		//Favourites
+		communityPageFree.clickFouriteMessage();
+		testUtil.testWaitFour();
+		communityPageFree.clickFouriteMessage();
+		testUtil.testWaitFour();
 		
 		
 	}
@@ -79,14 +92,12 @@ public class CommunityPageAdminTest extends TestBase{
 	@Test
 	public void community() throws Exception{
 		
-		
-		
-		
-		
+		System.out.println("Script run as expected");
+				
 	}
 	
 	@AfterMethod
 	public void tearDown() {
-		//Driver.quit();
+		Driver.quit();
 	}
 }
