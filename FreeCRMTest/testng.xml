@@ -18,6 +18,7 @@
       <class name="com.crm.qa.testcases.BusinessesPageFreeTest"/>
       <class name="com.crm.qa.testcases.HomePageAdminTest"/>
       <class name="com.crm.qa.testcases.AssignmentsPageAdminTest"/>
+      <class name="com.crm.qa.testcases.CommunityPageAdminTest"/>
       
     </classes>
   </test> <!-- Test -->
