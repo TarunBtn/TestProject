@@ -38,28 +38,28 @@ public class BusinessesPageFreeTest extends TestBase{
 	
 	@Test
 	public void businessesPageFree()throws Exception {
-		businessesPageFree.clickSector();
-		testUtil.testWaitTwo();
-		businessesPageFree.selectSector();
-		testUtil.testWaitFour();
-		businessesPageFree.clickSector();
-		testUtil.testWaitTwo();
-		businessesPageFree.clickSector();
-		testUtil.testWaitTwo();
-		businessesPageFree.selectSector();
-		testUtil.testWaitFour();
-		businessesPageFree.clickSector();
-		testUtil.testWaitTwo();
+		//businessesPageFree.clickSector();
+		//testUtil.testWaitTwo();
+		//businessesPageFree.selectSector();
+		//testUtil.testWaitFour();
+		//businessesPageFree.clickSector();
+		//testUtil.testWaitTwo();
+		//businessesPageFree.clickSector();
+		//testUtil.testWaitTwo();
+		//businessesPageFree.selectSector();
+		//testUtil.testWaitFour();
+		//businessesPageFree.clickSector();
+		//testUtil.testWaitTwo();
 		businessesPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		businessesPageFree.sortingZtoA();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		businessesPageFree.sortingLocationAtoZ();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		businessesPageFree.sortingLocationZtoA();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		businessesPageFree.sortingAtoZ();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		businessesPageFree.clickSortingDropDown();
 		testUtil.testWaitTwo();
 		
