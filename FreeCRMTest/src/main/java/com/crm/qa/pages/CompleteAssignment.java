@@ -59,10 +59,10 @@ public class CompleteAssignment extends TestBase{
 	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/form/div[24]/div/button[2]")
 	WebElement clickSaveButton;
 	
-	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/form/div[20]/div[2]/div/div[1]")
+	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/form/div[21]/div[2]/div/div[1]")
 	WebElement clickFieldOfExpertise;
-	
-	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/form/div[20]/div[2]/div/div[3]/ul/li[2]/span")
+		
+	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/form/div[21]/div[2]/div/div[3]/ul/li[7]/span/span")
 	WebElement selectFieldOfExpertise;
 	
 	//Initialization
