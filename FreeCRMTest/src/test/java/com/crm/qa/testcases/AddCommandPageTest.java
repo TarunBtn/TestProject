@@ -34,9 +34,9 @@ public class AddCommandPageTest extends TestBase{
 		checkCommandPage=new CheckCommandPage();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitEight();
-		homePage.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
+		//homePage.clickAcceptAllCookies();
+		//testUtil.testWaitEight();
 		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitFour();
 		myAssignmentsPage.clickAddNewCommand();
