@@ -1,5 +1,6 @@
 package com.crm.qa.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,6 +10,15 @@ import com.crm.qa.base.TestBase;
 public class BusinessesPageFree extends TestBase{
 	
 	//PageFactory OR Object Repository
+    @FindBy(id="company-search")
+    WebElement filterValue;
+    
+    @FindBy(xpath="/html/body/div[1]/main/div/nav/div[1]/div[1]/div[2]/a[2]/div[2]/div/span")
+    WebElement filterValueTooltip;
+    
+    @FindBy(xpath="//*[@id=\"filter\"]/div[1]/div[2]/span")
+    WebElement removeFilter;
+
 	@FindBy(xpath="//*[@id=\"dropdown-sector\"]/button")
 	WebElement sectorDropDown;
 	
@@ -36,6 +46,19 @@ public class BusinessesPageFree extends TestBase{
 	}
 	
 	//Actions
+	public void filterValue(String value) {
+		filterValue.sendKeys(value);
+	}
+	
+	public void filterValueTooltip() {
+		//filterValueTooltip.click();
+		filterValue.sendKeys(Keys.TAB);
+	}
+	
+	public void removeFilter() {
+		removeFilter.click();
+	}
+	
 	public void clickSector() {
 		sectorDropDown.click();
 	}
