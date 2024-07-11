@@ -48,7 +48,7 @@ public class AddCommandPageTest extends TestBase{
 	public void uploadFileTest()throws Exception {
 		addCommandPage.clickChooseFile();
 		testUtil.testWaitFour();
-		testUtil.uploadFile("D:\\Testfile.docx");
+		testUtil.uploadFile("D:\\Assignment.docx");
 		testUtil.testWaitFour();
 		checkCommandPage=addCommandPage.clickUploadFile();
 		testUtil.testWaitFour();

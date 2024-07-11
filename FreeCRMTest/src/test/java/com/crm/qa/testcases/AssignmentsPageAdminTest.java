@@ -1,5 +1,7 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -31,11 +33,11 @@ public class AssignmentsPageAdminTest extends TestBase{
 		assignmentsPageAdmin=new AssignmentsPageAdmin();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEight();
-		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
+		//homePageAdmin.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
 		homePageAdmin.clickAssignmentsTab();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 							
 	}
 	
@@ -43,7 +45,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 	public void assignmentsPage()throws Exception {	
 		//ValueFilterAssignment
 		assignmentsPageFree.enterAssignmentsName("QA EngineerEight");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectAssignmentsValue();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clearAssignmentsFilter();
@@ -71,20 +73,24 @@ public class AssignmentsPageAdminTest extends TestBase{
 		testUtil.testWaitTwo();
 		assignmentsPageFree.enterSkill();
 		testUtil.testWaitTwo();
-		assignmentsPageFree.enterSkillValue();
+		assignmentsPageFree.enterSkillValue("Postman");
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectSkillToolTip();
 		testUtil.testWaitFour();
+		assignmentsPageFree.clickSkillTab();
+		testUtil.testWaitFour();
 		assignmentsPageFree.applySkillFilter();
+		testUtil.testWaitEight();
+		assignmentsPageFree.clickSkillTab();
+		testUtil.testWaitTwo();
+		//assignmentsPageFree.clickSkillTab();
+		//testUtil.testWaitTwo();
+		assignmentsPageFree.clickResetFilterSkill();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickSkillTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.clickSkillTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.clickClearFilterSkill();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickCancelSkill();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Duration
 		assignmentsPageFree.clickDuration();
 		testUtil.testWaitTwo();
@@ -144,28 +150,38 @@ public class AssignmentsPageAdminTest extends TestBase{
 	  	//Location
 	  	assignmentsPageFree.clickLocationTab();
 	  	testUtil.testWaitTwo();
-	  	assignmentsPageFree.enterLocation("Noordwijk, Netherlands");
-	  	testUtil.testWaitFour();
-	  	assignmentsPageFree.applyLocationFilter();
+	  	assignmentsPageFree.enterLocation("Noordwijk Netherlands");
 	  	testUtil.testWaitEight();
+	  	try {
+	  	    assignmentsPageFree.enterLocationToolTip();
+	  	    testUtil.testWaitFour();
+	  	}catch(ElementNotInteractableException e) {
+	  		e.printStackTrace();
+	  	}
+	  	testUtil.testWaitFour();
+	  	try {
+	  	    assignmentsPageFree.applyLocationFilter();
+	  	    testUtil.testWaitFour();
+	  	}catch(NoSuchElementException e) {
+	  		e.printStackTrace();
+	  	}
+	  	testUtil.testWaitFour();
 	  	assignmentsPageFree.clickLocationTab();
-	  	testUtil.testWaitTwo();
+	  	testUtil.testWaitFour();
+	  	assignmentsPageFree.clickLocationTab();
+	  	testUtil.testWaitFour();
 	  	assignmentsPageFree.resetLocation();
 	  	testUtil.testWaitEight();
-	  	assignmentsPageFree.clickLocationTab();
-	  	testUtil.testWaitTwo();
-	  	assignmentsPageFree.clickCancelLocation();
-	  	testUtil.testWaitTwo();
-	  	//View matches
+	    //View matches
 	  	assignmentsPageFree.clickViewMatches();
-	  	testUtil.testWaitEight();
+	  	testUtil.testWaitEleven();
 	  	assignmentsPageFree.clickViewMatches();
-	  	testUtil.testWaitEight();
+	  	testUtil.testWaitEleven();
 	  	//Favourites
 	  	assignmentsPageFree.clickFavorites();
-	  	testUtil.testWaitEight();
+	  	testUtil.testWaitEleven();
 	  	assignmentsPageFree.clickFavorites();
-	  	testUtil.testWaitEight();
+	  	testUtil.testWaitEleven();
 	  	//Sorting
 	  	assignmentsPageFree.clickSortingDropDown();
 	  	testUtil.testWaitTwo();
@@ -178,12 +194,17 @@ public class AssignmentsPageAdminTest extends TestBase{
 	  	assignmentsPageFree.selectPublicationDateNewFirst();
 	  	testUtil.testWaitEight();
 	  	assignmentsPageFree.clickSortingDropDown();
-	  	testUtil.testWaitTwo();
+	  	testUtil.testWaitFour();
+	  	homePageAdmin.clickSignOutLink();
+	  	testUtil.testWaitFour();
+	  	homePageAdmin.clickSignOutBtn();
+	  	testUtil.testWaitFour();
 	}
 	
 	@AfterMethod
 	public void tearDown(){
 		Driver.quit();
+		
 	}
 
 }

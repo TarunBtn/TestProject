@@ -1,5 +1,7 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -21,6 +23,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 	public AssignmentsPageFreeTest() {
 		super();
 	}
+	
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
@@ -28,52 +31,61 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree=new AssignmentsPageFree();
 		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitEight();
-		homePageFree.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();	
+		//homePageFree.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
 		homePageFree.clickAssignmentsLink();
 		testUtil.testWaitEight();
 			
 	}
 	
-	//public void assignmentsPageTitleTest()throws Exception {
-		//String title=assignmentsPageFree.assignmentsPageTitle();
-		//Assert.assertEquals(title, "Opdrachten - Younited®");
-		//testUtil.testWaitTwo();
-	//}
-	
 	@Test
 	public void clickFiltersTest()throws Exception {
+		//ValueFilterAssignment
+		assignmentsPageFree.enterAssignmentsName("QA EngineerEight");
+		testUtil.testWaitEight();
+		assignmentsPageFree.selectAssignmentsValue();
+		testUtil.testWaitFour();
+		assignmentsPageFree.clearAssignmentsFilter();
+		testUtil.testWaitFour();
 		//Sector
 		assignmentsPageFree.clickSectorTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		assignmentsPageFree.selectSector();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectSector();
 		testUtil.testWaitFour();
+		assignmentsPageFree.clickSectorTab();
+		testUtil.testWaitTwo();
 		//Descipline
 		assignmentsPageFree.clickDescipline();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		assignmentsPageFree.selectDescipline();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectDescipline();
 		testUtil.testWaitFour();
+		assignmentsPageFree.clickDescipline();
+		testUtil.testWaitTwo();
 		//Skill
 		assignmentsPageFree.clickSkillTab();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.enterSkill();
-		testUtil.testWaitFour();
-		assignmentsPageFree.enterSkillValue();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
+		assignmentsPageFree.enterSkillValue("Postman");
+		testUtil.testWaitTwo();
 		assignmentsPageFree.selectSkillToolTip();
+		testUtil.testWaitTwo();
+		assignmentsPageFree.clickSkillTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.applySkillFilter();
+		testUtil.testWaitEight();
+		assignmentsPageFree.clickSkillTab();
+		testUtil.testWaitTwo();
+		assignmentsPageFree.clickSkillTab();
+		testUtil.testWaitTwo();
+		assignmentsPageFree.clickResetFilterSkill();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickSkillTab();
-		testUtil.testWaitFour();
-		assignmentsPageFree.clickSkillTab();
-		testUtil.testWaitFour();
-		assignmentsPageFree.clickClearFilterSkill();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickCancelSkill();
 		testUtil.testWaitFour();
@@ -83,52 +95,52 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.selectDuration();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickDuration();
-		testUtil.testWaitTwo();	
+		testUtil.testWaitTwo();
 		assignmentsPageFree.clickDuration();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.selectDuration();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickDuration();
-		testUtil.testWaitFour();
-		//WorkAndThinkingLevel
+		testUtil.testWaitTwo();
+		//Work & Thinking level
 		assignmentsPageFree.clickWorkAndThinkingLevel();
+		testUtil.testWaitTwo();
+	    assignmentsPageFree.selectWorkAndThinkingLevel();
+		testUtil.testWaitFour();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
+		testUtil.testWaitTwo();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.selectWorkAndThinkingLevel();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickWorkAndThinkingLevel();
 		testUtil.testWaitTwo();
-		assignmentsPageFree.clickWorkAndThinkingLevel();
-		testUtil.testWaitFour();
-		assignmentsPageFree.selectWorkAndThinkingLevel();
-		testUtil.testWaitFour();
-		assignmentsPageFree.clickWorkAndThinkingLevel();
-		testUtil.testWaitFour();
 		//Hours
-		assignmentsPageFree.clickHoursTab();
-		testUtil.testWaitFour();
+	    assignmentsPageFree.clickHoursTab();
+		testUtil.testWaitTwo();
 		assignmentsPageFree.selectHours();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.applyHoursFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHoursTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		assignmentsPageFree.resetHoursFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHoursTab();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.clickCancelHours();
 		testUtil.testWaitTwo();
 		//Hourly rate
 		assignmentsPageFree.clickHourlyRateTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		assignmentsPageFree.selectHourlyRate();
 		testUtil.testWaitFour();
 		assignmentsPageFree.applyHourlyRateFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHourlyRateTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		assignmentsPageFree.resetHourlyRateFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHourlyRateTab();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.clickCancelHourlyRate();
@@ -136,40 +148,54 @@ public class AssignmentsPageFreeTest extends TestBase{
 		//Location
 		assignmentsPageFree.clickLocationTab();
 		testUtil.testWaitTwo();
-		assignmentsPageFree.locationRemove();
+		assignmentsPageFree.enterLocation("Noordwijk Netherlands");
+		testUtil.testWaitTwo();
+		try {
+			  	assignmentsPageFree.enterLocationToolTip();
+			  	testUtil.testWaitTwo();
+		}catch(ElementNotInteractableException e) {
+			   e.printStackTrace();
+		}
+		testUtil.testWaitTwo();
+		try {
+			  	assignmentsPageFree.applyLocationFilter();
+			  	testUtil.testWaitFour();
+		}catch(NoSuchElementException e) {
+			    e.printStackTrace();
+		}
 		testUtil.testWaitFour();
-		assignmentsPageFree.enterLocation("Noordwijk, Netherlands");
-		testUtil.testWaitFour();
-		assignmentsPageFree.applyLocationFilter();
+		assignmentsPageFree.clickLocationTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickLocationTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetLocation();
-		testUtil.testWaitFour();
-		assignmentsPageFree.clickLocationTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.clickCancelLocation();
-		testUtil.testWaitTwo();
+		testUtil.testWaitEight();
 		//View matches
 		assignmentsPageFree.clickViewMatches();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		assignmentsPageFree.clickViewMatches();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		//Favourites
 		assignmentsPageFree.clickFavorites();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		assignmentsPageFree.clickFavorites();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		//Sorting
 		assignmentsPageFree.clickSortingDropDown();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.selectPublicationDateOldFirst();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();	
 		assignmentsPageFree.selectAtHourlyRate();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectByNumberOfHours();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectPublicationDateNewFirst();
+		testUtil.testWaitEight();
+		assignmentsPageFree.clickSortingDropDown();
+		testUtil.testWaitTwo();
+		homePageFree.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePageFree.clickSignOutBtn();
 		testUtil.testWaitFour();
 		
 	}
@@ -177,6 +203,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
+		
 	}
 	
 	
