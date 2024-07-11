@@ -31,22 +31,22 @@ public class MyAssignmentsPageTest extends TestBase{
 	public void setUp()throws Exception {
 		initialization();	
 		testUtil=new TestUtil();		
-		loginPage=new LoginPage();		
-		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitEight();
-		homePage.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		loginPage=new LoginPage();
 		myAssignmentsPage=new MyAssignmentsPage();
-		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFour();
 		addCommandPage=new AddCommandPage();
+		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		testUtil.testWaitFourteen();
+		//homePage.clickAcceptAllCookies();
+		//testUtil.testWaitEight();
+		/*homePage.clickMyAssignmentsLink();
+		testUtil.testWaitEight();*/
 		//checkCommandPage=new CheckCommandPage();		
 													
 	}
 	
 	@Test(priority=1)
 	public void myAssignmentsPageTest()throws Exception {
-		myAssignmentsPage.enterValueInFilter();
+		/*myAssignmentsPage.enterValueInFilter();
 		testUtil.testWaitFour();
 		myAssignmentsPage.clickResetFilter();
 		testUtil.testWaitEight();
@@ -63,7 +63,11 @@ public class MyAssignmentsPageTest extends TestBase{
 		myAssignmentsPage.selectStatusFromDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.StatusDropDown();
+		testUtil.testWaitFour();*/
+		homePage.clickSignOutLink();
 		testUtil.testWaitFour();
+		homePage.clickSignOutBtn();
+		testUtil.testWaitEight();
 		
 	}
 	

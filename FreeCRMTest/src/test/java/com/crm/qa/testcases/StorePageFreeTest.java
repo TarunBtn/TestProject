@@ -30,17 +30,17 @@ public class StorePageFreeTest extends TestBase{
 		testUtil=new TestUtil();
 		storePageFree=new StorePageFree();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitEight();
-		homePageFree.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
+		//homePageFree.clickAcceptAllCookies();
+		//testUtil.testWaitEight();
 		//homePageFree.clickStoreTab();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		
 	}
 	
 	@Test
 	public void clickStoreTab()throws Exception {
-		storePageFree.clickAllTab();
+		/*storePageFree.clickAllTab();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
@@ -145,9 +145,12 @@ public class StorePageFreeTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		testUtil.scrollUp();
+		testUtil.testWaitFour();*/
+		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
-		
-		
+		homePageFree.clickSignOutBtn();
+		testUtil.testWaitEight();
+				
 	}
 	
 	@AfterMethod

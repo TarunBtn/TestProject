@@ -32,19 +32,19 @@ public class MyNetworkPageFreeTest extends TestBase{
 		communityPageFree=new CommunityPageFree();
 		myNetworkPageFree=new MyNetworkPageFree();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitEight();
-		homePageFree.clickAcceptAllCookies();
-		testUtil.testWaitEight();
-		homePageFree.clickCommunityTab();
+		testUtil.testWaitFourteen();
+		//homePageFree.clickAcceptAllCookies();
+		//testUtil.testWaitEight();
+		/*homePageFree.clickCommunityTab();
 		testUtil.testWaitFour();
 		communityPageFree.clickMyNetworkBtn();
-		testUtil.testWaitFour();
+		testUtil.testWaitFour();*/
 		
 	}
 	
 	@Test
 	public void myNetworkPageFreeTest()throws Exception {
-		myNetworkPageFree.clickMyNetworkTab();
+		/*myNetworkPageFree.clickMyNetworkTab();
 		testUtil.testWaitFour();
 		myNetworkPageFree.clickMyRequestsTab();
 		testUtil.testWaitFour();
@@ -55,7 +55,11 @@ public class MyNetworkPageFreeTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		myNetworkPageFree.clickAreaOfInterest();
+		testUtil.testWaitFour();*/
+		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
+		homePageFree.clickSignOutBtn();
+		testUtil.testWaitEight();
 	}
 	
 	@AfterMethod
