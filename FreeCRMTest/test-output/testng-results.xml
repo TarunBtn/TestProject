@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-11T15:36:36 IST" name="Default suite" finished-at="2024-07-11T15:36:55 IST" duration-ms="19600">
+  <suite started-at="2024-07-11T15:39:20 IST" name="Default suite" finished-at="2024-07-11T15:39:39 IST" duration-ms="19175">
     <groups>
     </groups>
-    <test started-at="2024-07-11T15:36:36 IST" name="Default test" finished-at="2024-07-11T15:36:55 IST" duration-ms="19600">
+    <test started-at="2024-07-11T15:39:20 IST" name="Default test" finished-at="2024-07-11T15:39:39 IST" duration-ms="19175">
       <class name="com.crm.qa.testcases.BusinessesPageFreeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.BusinessesPageFreeTest@273e7444]" started-at="2024-07-11T15:36:36 IST" name="setUp" finished-at="2024-07-11T15:36:55 IST" duration-ms="19553" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crm.qa.testcases.BusinessesPageFreeTest@273e7444]" started-at="2024-07-11T15:39:20 IST" name="setUp" finished-at="2024-07-11T15:39:39 IST" duration-ms="19122" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/main/section/div/div/div/form/div[3]/button"}
@@ -16,9 +16,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [79a7b2d5257685218b74e0b899276007, findElement {using=xpath, value=/html/body/div/main/section/div/div/div/form/div[3]/button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\tbutani\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55799}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55799/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 79a7b2d5257685218b74e0b899276007]]>
+Command: [f18e3dd42d1c49b28f586c55fa155eeb, findElement {using=xpath, value=/html/body/div/main/section/div/div/div/form/div[3]/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\tbutani\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55962/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f18e3dd42d1c49b28f586c55fa155eeb]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/main/section/div/div/div/form/div[3]/button"}
@@ -27,9 +27,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [79a7b2d5257685218b74e0b899276007, findElement {using=xpath, value=/html/body/div/main/section/div/div/div/form/div[3]/button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\tbutani\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55799}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55799/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 79a7b2d5257685218b74e0b899276007
+Command: [f18e3dd42d1c49b28f586c55fa155eeb, findElement {using=xpath, value=/html/body/div/main/section/div/div/div/form/div[3]/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\tbutani\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55962/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f18e3dd42d1c49b28f586c55fa155eeb
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -88,7 +88,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="businessesPageFree()[pri:0, instance:com.crm.qa.testcases.BusinessesPageFreeTest@273e7444]" started-at="2024-07-11T15:36:55 IST" name="businessesPageFree" finished-at="2024-07-11T15:36:55 IST" duration-ms="0" status="SKIP">
+        <test-method signature="businessesPageFree()[pri:0, instance:com.crm.qa.testcases.BusinessesPageFreeTest@273e7444]" started-at="2024-07-11T15:39:39 IST" name="businessesPageFree" finished-at="2024-07-11T15:39:39 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/main/section/div/div/div/form/div[3]/button"}
@@ -97,9 +97,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [79a7b2d5257685218b74e0b899276007, findElement {using=xpath, value=/html/body/div/main/section/div/div/div/form/div[3]/button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\tbutani\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55799}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55799/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 79a7b2d5257685218b74e0b899276007]]>
+Command: [f18e3dd42d1c49b28f586c55fa155eeb, findElement {using=xpath, value=/html/body/div/main/section/div/div/div/form/div[3]/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\tbutani\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55962/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f18e3dd42d1c49b28f586c55fa155eeb]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div/main/section/div/div/div/form/div[3]/button"}
@@ -108,9 +108,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [79a7b2d5257685218b74e0b899276007, findElement {using=xpath, value=/html/body/div/main/section/div/div/div/form/div[3]/button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\tbutani\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55799}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55799/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 79a7b2d5257685218b74e0b899276007
+Command: [f18e3dd42d1c49b28f586c55fa155eeb, findElement {using=xpath, value=/html/body/div/main/section/div/div/div/form/div[3]/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\tbutani\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55962/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f18e3dd42d1c49b28f586c55fa155eeb
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -169,7 +169,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- businessesPageFree -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.BusinessesPageFreeTest@273e7444]" started-at="2024-07-11T15:36:55 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1720692415876" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.BusinessesPageFreeTest@273e7444]" started-at="2024-07-11T15:39:39 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1720692579825" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
