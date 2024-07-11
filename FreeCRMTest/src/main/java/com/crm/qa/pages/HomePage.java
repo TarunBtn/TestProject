@@ -27,6 +27,12 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//*[@id=\"dashboard\"]/div[3]/div[2]/div/div[2]/div[2]/div[2]/div[1]/button/span")
 	WebElement acceptAllCookies;
 	
+	@FindBy(xpath="//a[@class='user-infoNav-item-link logout']//span[@class='material-icons'][normalize-space()='logout']")
+	WebElement signOutLink;
+	
+	@FindBy(xpath="//button[@class='btn btn-primary btn btn-primary']")
+	WebElement signOutBtn;
+	
 	//Initialization
 	public HomePage() {
 		PageFactory.initElements(Driver, this);
@@ -53,6 +59,14 @@ public class HomePage extends TestBase{
 	
 	public void clickAcceptAllCookies() {
 		acceptAllCookies.click();
+	}
+	
+	public void clickSignOutLink() {
+		signOutLink.click();
+	}
+	
+	public void clickSignOutBtn() {
+		signOutBtn.click();
 	}
 	
 	
