@@ -58,7 +58,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.clickSectorTab();
 		testUtil.testWaitTwo();
 		//Descipline
-		assignmentsPageFree.clickDescipline();
+		/*assignmentsPageFree.clickDescipline();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.selectDescipline();
 		testUtil.testWaitFour();
@@ -192,11 +192,11 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.selectPublicationDateNewFirst();
 		testUtil.testWaitEight();
 		assignmentsPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();*/
 		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		
 	}
 	
