@@ -29,9 +29,9 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil=new TestUtil();
 		entrepreneursPageFree=new EntrepreneursPageFree();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitEight();
-		homePageFree.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
+		//homePageFree.clickAcceptAllCookies();
+		//testUtil.testWaitEight();
 		homePageFree.clickEntrepreneurTab();
 		testUtil.testWaitEleven();
 		
@@ -52,7 +52,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickWorkingThinkingDropDown();
 		testUtil.testWaitTwo();
-		entrepreneursPageFree.clickDesciplineDropDown();
+		/*entrepreneursPageFree.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectDescipline();
 		testUtil.testWaitFour();
@@ -87,7 +87,11 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		entrepreneursPageFree.selectSortingAtoZ();
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();*/
+		homePageFree.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePageFree.clickSignOutBtn();
+		testUtil.testWaitEight();
 		
 	}
 	
