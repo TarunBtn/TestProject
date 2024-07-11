@@ -28,7 +28,7 @@ public class HomePageFreeTest extends TestBase{
 		testUtil=new TestUtil();
 		assignmentsPageFree=new AssignmentsPageFree();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		//homePageFree.clickAcceptAllCookies();
 		//testUtil.testWaitEight();
 				
@@ -38,7 +38,7 @@ public class HomePageFreeTest extends TestBase{
 	public void clickAssignmentLinkTest()throws Exception {
 		//testUtil.testWaitEight();
 		assignmentsPageFree=homePageFree.clickAssignmentsLink();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
