@@ -52,8 +52,9 @@ public class HomePage extends TestBase{
 		return new HomePageFree();
 	}
 	
-	public MyAssignmentsPage clickMyAssignmentsLink() {
+	public MyAssignmentsPage clickMyAssignmentsLink()throws Exception {
 		myAssignmentsLink.click();
+		Thread.sleep(8000);
 		return new MyAssignmentsPage();
 	}
 	
