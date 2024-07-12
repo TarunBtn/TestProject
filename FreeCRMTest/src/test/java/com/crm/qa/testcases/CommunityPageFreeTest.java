@@ -34,18 +34,18 @@ public class CommunityPageFreeTest extends TestBase{
 		//testUtil.testWaitFour();
 		//homePageFree.clickAcceptAllCookies();
 		//testUtil.testWaitEleven();
-		/*homePageFree.suitableAssignments();
+		homePageFree.suitableAssignments();
 		testUtil.testWaitEight();
 		homePageFree.clickNetworkTab();
 		testUtil.testWaitTwo();
 		homePageFree.clickNetworkTabTooltip();
-		testUtil.testWaitFour();*/
+		testUtil.testWaitFour();
 								
 	}
 	
 	@Test
 	public void communityPageFreeTest()throws Exception {
-		/*communityPageFree.clickTypeOfMessageDropDown();
+		communityPageFree.clickTypeOfMessageDropDown();
 		testUtil.testWaitTwo();
 		communityPageFree.selectTypeOfMessage();
 		testUtil.testWaitFour();
@@ -92,12 +92,12 @@ public class CommunityPageFreeTest extends TestBase{
 		communityPageFree.clickFouriteMessage();
 		testUtil.testWaitFour();
 		communityPageFree.clickFouriteMessage();
-		testUtil.testWaitFour();*/
+		testUtil.testWaitFour();
 		//communityPageFree.clickMyNetworkBtn();
 		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 				
 		
 	}

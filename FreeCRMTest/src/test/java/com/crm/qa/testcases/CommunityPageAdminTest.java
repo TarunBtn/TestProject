@@ -52,7 +52,7 @@ public class CommunityPageAdminTest extends TestBase{
 		myNetworkPageFree.clickCancelSearch();
 		testUtil.testWaitFour();
 		//Type of Message
-		/*myNetworkPageFree.clickTypeMessageDropDown();
+		myNetworkPageFree.clickTypeMessageDropDown();
 		testUtil.testWaitTwo();
 		myNetworkPageFree.selectTypeMessage();
 		testUtil.testWaitFour();
@@ -108,7 +108,7 @@ public class CommunityPageAdminTest extends TestBase{
 		testUtil.scrollUp();
 		testUtil.testWaitTwo();
 		myNetworkPageFree.clickAreaOfInterest();
-		testUtil.testWaitFour();*/
+		testUtil.testWaitFour();
 		homePageAdmin.clickSignOutLink();
 	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();

@@ -60,7 +60,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 		assignmentsPageFree.clickSectorTab();
 		testUtil.testWaitTwo();
 		//Descipline
-		/*assignmentsPageFree.clickDescipline();
+		assignmentsPageFree.clickDescipline();
 		testUtil.testWaitTwo();
 		assignmentsPageFree.selectDescipline();
 		testUtil.testWaitFour();
@@ -194,7 +194,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 	  	assignmentsPageFree.selectPublicationDateNewFirst();
 	  	testUtil.testWaitEight();
 	  	assignmentsPageFree.clickSortingDropDown();
-	  	testUtil.testWaitFour();*/
+	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutLink();
 	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();
