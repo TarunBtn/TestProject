@@ -192,7 +192,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.selectPublicationDateNewFirst();
 		testUtil.testWaitEight();
 		assignmentsPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
