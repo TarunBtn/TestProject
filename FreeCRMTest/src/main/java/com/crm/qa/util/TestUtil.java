@@ -13,8 +13,7 @@ import com.crm.qa.base.TestBase;
 public class TestUtil extends TestBase{
 	
 	public static long PAGE_LOAD_TIMEOUT = 20;
-	public static long IMPLICIT_WAIT = 10;
-	
+	public static long IMPLICIT_WAIT = 20;
 	
 	public void switchToFrameOne() {
 		Driver.switchTo().frame("mainpanel");
@@ -54,6 +53,16 @@ public class TestUtil extends TestBase{
 		jsxtwo.executeScript("window.scrollBy(0,-450)");
 	}
 	
+	public void scrollRight() {
+		JavascriptExecutor jsxfour=(JavascriptExecutor)Driver;
+		jsxfour.executeScript("window.scrollBy(450,0)");
+	}
+	
+	public void scrollLeft() {
+		JavascriptExecutor jsxfive=(JavascriptExecutor)Driver;
+		jsxfive.executeScript("window.scrollBy(-450,0)");
+	}
+	
 	public void switchToWindow() {
 		Set<String> AllWindowHandles=Driver.getWindowHandles();
 		String window01=(String)AllWindowHandles.toArray()[0];
@@ -85,7 +94,7 @@ public class TestUtil extends TestBase{
         	exp.printStackTrace();
         }
 	
-
+        
 	}
 
 }
