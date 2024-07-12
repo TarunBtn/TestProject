@@ -9,7 +9,7 @@ import com.crm.qa.base.TestBase;
 public class AddCommandPage extends TestBase{
 	
 	//Page factory or Object Repository
-	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/div/div[1]/div/div/div[2]/div/div/label/span")
+	@FindBy(xpath="//span[@class='input-group-text btn btn-white justify-content-center']")
 	WebElement chooseFile;
 	
 	@FindBy(xpath="//*[@id=\"general-company-edit\"]/div/div/div[1]/div/div/div[2]/button")
