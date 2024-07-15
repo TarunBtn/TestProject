@@ -40,7 +40,7 @@ public class StorePageFreeTest extends TestBase{
 	
 	@Test
 	public void clickStoreTab()throws Exception {
-		/*storePageFree.clickAllTab();
+		storePageFree.clickAllTab();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
@@ -145,7 +145,7 @@ public class StorePageFreeTest extends TestBase{
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		testUtil.scrollUp();
-		testUtil.testWaitFour();*/
+		testUtil.testWaitFour();
 		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
