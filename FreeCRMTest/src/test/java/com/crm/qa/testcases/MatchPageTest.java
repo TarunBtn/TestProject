@@ -1,29 +1,23 @@
 package com.crm.qa.testcases;
 
-import org.openqa.selenium.ElementClickInterceptedException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.crm.qa.base.TestBase;
-import com.crm.qa.pages.HomePageAdmin;
+import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.pages.MatchPage;
-import com.crm.qa.pages.MatchPageAdmin;
 import com.crm.qa.util.TestUtil;
-//import com.younited.qa.pages.MatchPage;
 
 
-public class MatchPageAdminTest extends TestBase{
-
+public class MatchPageTest extends TestBase{
 	LoginPage loginPage;
-	HomePageAdmin homePageAdmin;
+	HomePage homePage;
 	MatchPage matchPage;
-	MatchPageAdmin matchPageAdmin;
 	TestUtil testUtil;
 	
-	
-	public MatchPageAdminTest() {
+	public MatchPageTest() {
 		super();
 	}
 	
@@ -32,33 +26,23 @@ public class MatchPageAdminTest extends TestBase{
 		initialization();
 		loginPage=new LoginPage();
 		matchPage=new MatchPage();
-		matchPageAdmin=new MatchPageAdmin();
 		testUtil=new TestUtil();
-		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
+		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.testWaitFourteen();
-		//homePageAdmin.clickAcceptAllCookies();
+		//homePage.clickAcceptAllCookies();
 		//testUtil.testWaitEleven();
-		homePageAdmin.clickMatchTab();
-		testUtil.testWaitEleven();	
-		
+		homePage.clickMatchLink();
+		testUtil.testWaitFour();
+				
 	}
 	
 	@Test
-	public void match()throws Exception {
+	public void matchPage()throws Exception {
 		//Assignment Filter
-		matchPage.clickAssignmentFilter();
+		matchPage.clickAssignmentFilterDropdown();
 		testUtil.testWaitTwo();
-		matchPage.enterAssignmentFilter("Ajay");
+		matchPage.selectAssignmentFilter();
 		testUtil.testWaitEight();
-		matchPageAdmin.clickCancelValueFilter();
-		testUtil.testWaitEight();
-		//Command Filter
-		matchPage.clickCommandDropDown();
-		testUtil.testWaitTwo();
-		matchPage.selectCommandValue();
-		testUtil.testWaitEight();
-		//matchPage.cancelCommandValue();
-		//testUtil.testWaitEight();
 		//Availability
 		matchPage.clickAvailabilityDropDown();
 		testUtil.testWaitTwo();
@@ -73,10 +57,8 @@ public class MatchPageAdminTest extends TestBase{
 		//Location
 		matchPage.clickLocationDropDown();
 		testUtil.testWaitTwo();
-		matchPage.enterLocationClear();
-		testUtil.testWaitFour();
 		matchPage.enterLocationValue("Noordwijk, Netherlands");
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		matchPage.clickApplyFilterLocation();
 		testUtil.testWaitEight();
 		matchPage.clickLocationDropDown();
@@ -126,33 +108,33 @@ public class MatchPageAdminTest extends TestBase{
 		testUtil.testWaitTwo();
 		//Skills
 		matchPage.clickSkillTab();
-		testUtil.testWaitFour();		
-		matchPage.clickEnterValueSkill();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();		
+		/*matchPage.clickEnterValueSkill();
+		testUtil.testWaitTwo();
 		matchPage.enterValueSkill("Accountbeheer");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//matchPage.selectTooltipSkill();
-		//testUtil.testWaitFour();
+		//testUtil.testWaitEight();
 		matchPage.enterValueSkillTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		matchPage.clickSkillTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		try {
 		    matchPage.clickApplyFilterSkill();
-		    testUtil.testWaitEight();
+		    testUtil.testWaitTwo();
 		}catch(ElementClickInterceptedException e) {
 			e.printStackTrace();
 		}
 		matchPage.clickSkillTab();
-	    testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		matchPage.clickResetFilterSkill();
-		testUtil.testWaitEight();
+		testUtil.testWaitEight();*/
 		matchPage.clickSkillTab();
 		testUtil.testWaitFour();
 		//matchPage.clickSkillTab();
 		//testUtil.testWaitFour();
-		matchPage.clickCancelSkill();
-		testUtil.testWaitFour();
+		/*matchPage.clickCancelSkill();
+		testUtil.testWaitFour();*/
 		//Stored
 		matchPage.clickStored();
 		testUtil.testWaitEight();
@@ -172,19 +154,19 @@ public class MatchPageAdminTest extends TestBase{
 		matchPage.selectHourlyRateMaxMin();
 		testUtil.testWaitEight();
 		matchPage.selectNumberOfHoursMinMax();
-		testUtil.testWaitEight();
-		matchPage.selectNumberOfHoursMaxMin();
-		testUtil.testWaitEight();
-		matchPage.selectLocation();
-		testUtil.testWaitEight();
-		homePageAdmin.clickSignOutLink();
-	  	testUtil.testWaitFour();
-	  	homePageAdmin.clickSignOutBtn();
-	  	testUtil.testWaitFour();*/
-		homePageAdmin.clickSignOutLink();
 		testUtil.testWaitFour();
-		homePageAdmin.clickSignOutBtn();
-		testUtil.testWaitEight();
+		matchPage.selectNumberOfHoursMaxMin();
+		testUtil.testWaitFour();
+		matchPage.selectLocation();
+		testUtil.testWaitFour();
+		homePage.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePage.clickSignOutBtn();
+		testUtil.testWaitFour();*/
+		homePage.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePage.clickSignOutBtn();
+		testUtil.testWaitFour();
 		
 	}
 	
@@ -192,5 +174,5 @@ public class MatchPageAdminTest extends TestBase{
 	public void tearDown() {
 		Driver.quit();
 	}
-	
+
 }

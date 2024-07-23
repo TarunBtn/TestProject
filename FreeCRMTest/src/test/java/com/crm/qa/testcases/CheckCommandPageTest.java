@@ -47,7 +47,7 @@ public class CheckCommandPageTest extends TestBase{
 		testUtil.testWaitFour();
 		addCommandPage.clickChooseFile();
 		testUtil.testWaitFour();
-		testUtil.uploadFile("D:\\Testfile.docx");
+		testUtil.uploadFile("C:\\chromedriver\\Assignment.docx");
 		testUtil.testWaitFour();
 		addCommandPage.clickUploadFile();
 		testUtil.testWaitFour();
