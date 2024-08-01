@@ -34,7 +34,7 @@ public class HomePageTest extends TestBase{
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
 		testUtil.testWaitFourteen();
 		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
 				
 	}
 	
@@ -44,6 +44,10 @@ public class HomePageTest extends TestBase{
 		testUtil.testWaitFour();
 		Assert.assertEquals(title, "Younited®");
 		testUtil.testWaitFour();
+		homePage.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePage.clickSignOutBtn();
+		testUtil.testWaitEight();
 	}
 	
 	@Test(priority=2)
@@ -52,12 +56,22 @@ public class HomePageTest extends TestBase{
 		testUtil.testWaitFour();
 		Assert.assertTrue(logo);
 		testUtil.testWaitFour();
+		homePage.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePage.clickSignOutBtn();
+		testUtil.testWaitEight();
 	}
 	
 	@Test(priority=3)
-	public void clickMyAssignmentsLinkTest()throws Exception {
-		myAssignmentsPage=homePage.clickMyAssignmentsLink();
+	public void myAssignmentsPage()throws Exception {
+		//myAssignmentsPage=homePage.clickMyAssignmentsLink();
+		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitFourteen();
+		//testUtil.testWaitEight();
+		homePage.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePage.clickSignOutBtn();
+		testUtil.testWaitEight();
 	}
 	
 	

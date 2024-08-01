@@ -31,7 +31,9 @@ public class HomePageAdminTest extends TestBase{
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
 		testUtil.testWaitFourteen();
 		//homePageAdmin.clickAcceptAllCookies();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
+		//testUtil.testWaitFour();
+		
 	}
 	
 	@Test
@@ -40,9 +42,9 @@ public class HomePageAdminTest extends TestBase{
 		assignmentsPageAdmin=homePageAdmin.clickAssignmentsTab();
 		testUtil.testWaitEight();
 		homePageAdmin.clickSignOutLink();
-		testUtil.testWaitFour();
-		homePageAdmin.clickSignOutBtn();
-		testUtil.testWaitEight();
+	  	testUtil.testWaitFour();
+	  	homePageAdmin.clickSignOutBtn();
+	  	testUtil.testWaitEight();
 	}
 	
 	@AfterMethod

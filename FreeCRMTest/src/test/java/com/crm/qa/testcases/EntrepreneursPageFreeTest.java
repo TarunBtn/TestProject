@@ -31,11 +31,12 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
 		testUtil.testWaitFourteen();
 		//homePageFree.clickAcceptAllCookies();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
+		//homePageFree.suitableAssignments();
+		//testUtil.testWaitFour();
 		homePageFree.clickEntrepreneurTab();
-		testUtil.testWaitEleven();
-		
-		
+		testUtil.testWaitFourteen();
+				
 	}
 	
 	@Test
@@ -44,6 +45,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickCancel();
 		testUtil.testWaitFour();
+		//Working/Thinking level
 		entrepreneursPageFree.clickWorkingThinkingDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectWorkingThinkingLevel();
@@ -52,6 +54,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickWorkingThinkingDropDown();
 		testUtil.testWaitTwo();
+		//Descipline
 		entrepreneursPageFree.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectDescipline();
@@ -60,6 +63,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
+		//Area of Interest
 		entrepreneursPageFree.clickAreaOfInterestDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectAreaOfInterest();
@@ -68,6 +72,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickAreaOfInterestDropDown();
 		testUtil.testWaitTwo();
+		//Skills
 		entrepreneursPageFree.clickSkillsTab();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.enterSkill();
@@ -76,10 +81,14 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.selectSkillToolTip();
 		testUtil.testWaitFour();
+		entrepreneursPageFree.clickSkillsTab();
+		testUtil.testWaitTwo();
 		entrepreneursPageFree.clickApplyFilter();
+		testUtil.testWaitEight();
+		entrepreneursPageFree.clickSkillsTab();
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickResetFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		entrepreneursPageFree.clickSortingDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectSortingZtoA();
@@ -87,7 +96,7 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		entrepreneursPageFree.selectSortingAtoZ();
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
