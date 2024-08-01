@@ -51,10 +51,10 @@ public class MatchPageAdminTest extends TestBase{
 		matchPageAdmin.enterValueFilter("Ajay");
 		//testUtil.testWaitEleven();
 		matchPageAdmin.clickCancelValueFilter();
-		//testUtil.testWaitFourteen();
+		testUtil.testWaitFourteen();
 		//Assignment Dropdown
 		matchPageAdmin.clickAssignmentDropDown();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		matchPageAdmin.selectAssignmentValue();
 		//testUtil.testWaitEight();
 		  //matchPage.cancelCommandValue();

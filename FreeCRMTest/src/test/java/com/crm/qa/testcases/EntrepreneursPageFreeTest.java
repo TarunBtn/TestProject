@@ -44,10 +44,10 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		entrepreneursPageFree.enterEntrepreneur("Ajay");
 		//testUtil.testWaitFour();
 		entrepreneursPageFree.clickCancel();
-		//testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//Working/Thinking level
 		entrepreneursPageFree.clickWorkingThinkingDropDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.selectWorkingThinkingLevel();
 		//testUtil.testWaitFour();
 		entrepreneursPageFree.selectWorkingThinkingLevel();

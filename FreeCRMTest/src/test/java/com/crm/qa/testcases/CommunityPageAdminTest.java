@@ -50,10 +50,10 @@ public class CommunityPageAdminTest extends TestBase{
 		myNetworkPageFree.enterSearchValue("Hr");
 		//testUtil.testWaitFour();
 		myNetworkPageFree.clickCancelSearch();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		//Type of Message
 		myNetworkPageFree.clickTypeMessageDropDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.selectTypeMessage();
 		//testUtil.testWaitFour();
 		myNetworkPageFree.selectTypeMessage();

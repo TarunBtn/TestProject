@@ -42,16 +42,16 @@ public class AddCommandPageTest extends TestBase{
 		homePage.clickMyAssignmentsLink();
 		//testUtil.testWaitFourteen();
 		myAssignmentsPage.clickAddNewCommand();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		testUtil.scrollDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		
 	}
 	
 	@Test
 	public void uploadFileTest()throws Exception {
 		addCommandPage.clickChooseFile();
-		//testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		testUtil.uploadFile("D:\\Assignment.docx");
 		//testUtil.testWaitEight();
 		checkCommandPage=addCommandPage.clickUploadFile();
