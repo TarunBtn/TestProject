@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -50,13 +51,17 @@ public class TestBase {
 			System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
 			Driver=new FirefoxDriver();
 		}
-		
+		Thread.sleep(4000);
 		Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();
 		Driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		Driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		Thread.sleep(4000);
-		Driver.get(prop.getProperty("url"));
+		try {
+		    Driver.get(prop.getProperty("url"));
+		}catch(TimeoutException e) {
+			e.printStackTrace();
+		}
 		Thread.sleep(4000);
 		
 	}
