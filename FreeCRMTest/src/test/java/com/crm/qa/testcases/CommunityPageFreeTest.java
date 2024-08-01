@@ -30,7 +30,7 @@ public class CommunityPageFreeTest extends TestBase{
 		myNetworkPageFree=new MyNetworkPageFree();
 		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitFourteen();
+		//testUtil.testWaitFourteen();
 		//testUtil.testWaitFour();
 		//homePageFree.clickAcceptAllCookies();
 		//testUtil.testWaitEleven();
@@ -95,9 +95,9 @@ public class CommunityPageFreeTest extends TestBase{
 		testUtil.testWaitFour();*/
 		//communityPageFree.clickMyNetworkBtn();
 		homePageFree.clickSignOutLink();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 				
 		
 	}

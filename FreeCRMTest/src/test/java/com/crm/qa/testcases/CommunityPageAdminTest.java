@@ -35,84 +35,84 @@ public class CommunityPageAdminTest extends TestBase{
 		myNetworkPageFree=new MyNetworkPageFree();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitFourteen();
-		//homePageAdmin.clickAcceptAllCookies();
-		//testUtil.testWaitEleven();
+		//testUtil.testWaitFourteen();
+		  //homePageAdmin.clickAcceptAllCookies();
+		  //testUtil.testWaitEleven();
 		homePageAdmin.clickCommunityPageAdmin();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 						
 	}
 	
 	@Test
 	public void community() throws Exception{
 		myNetworkPageFree.clickSeachValue();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		myNetworkPageFree.enterSearchValue("Hr");
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.clickCancelSearch();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		//Type of Message
 		myNetworkPageFree.clickTypeMessageDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.selectTypeMessage();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.selectTypeMessage();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.clickTypeMessageDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		//Area of Interest
 		myNetworkPageFree.clickAreaOfInterestDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.selectAreaOfInterest();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.selectAreaOfInterest();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.clickAreaOfInterestDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		//Sector
 		myNetworkPageFree.clickSectorDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.selectSector();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.selectSector();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.clickSectorDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.clickEveryOneDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.selectEveryOneMyOwnNetwork();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.selectEveryOneEveryOne();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.clickEveryOneDropDown();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		myNetworkPageFree.clickFavoiritesPosts();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.clickFavoiritesPosts();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		//MyNetwork
 		myNetworkPageFree.clickMyNetworkBtn();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		myNetworkPageFree.clickMyNetworkTab();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myNetworkPageFree.clickMyRequestsTab();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		myNetworkPageFree.clickSuggestionsForYouTab();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		myNetworkPageFree.clickAreaOfInterest();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		homePageAdmin.clickSignOutLink();
-	  	testUtil.testWaitFour();
+	  	//testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();
-	  	testUtil.testWaitEight();
+	  	//testUtil.testWaitEight();
 		
 				
 	}

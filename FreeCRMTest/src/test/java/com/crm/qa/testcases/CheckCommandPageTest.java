@@ -38,28 +38,27 @@ public class CheckCommandPageTest extends TestBase{
 		completeAssignment=new CompleteAssignment();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitFourteen();
-		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEleven();
-		//homePage.clickReactiesDropDown();
-		//testUtil.testWaitFour();
-		//homePage.clickReactiesDropDown();
-		//testUtil.testWaitFour();
+		//testUtil.testWaitFourteen();
+		  //homePage.clickAcceptAllCookies();
+		  //testUtil.testWaitEleven();
+		  //homePage.clickReactiesDropDown();
+		  //testUtil.testWaitFour();
+		  //homePage.clickReactiesDropDown();
+		  //testUtil.testWaitFour();
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFourteen();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitFourteen();
 		addCommandPage=myAssignmentsPage.clickAddNewCommand();
-		testUtil.testWaitEleven();
+		//testUtil.testWaitEleven();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		addCommandPage.clickChooseFile();
-		testUtil.testWaitFour();
-		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
-		testUtil.testWaitEight();
-		addCommandPage.clickUploadFile();
-		testUtil.testWaitEleven();
-		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
+		addCommandPage.clickChooseFile();
+		//testUtil.testWaitFour();
+		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
+		//testUtil.testWaitEight();
+		addCommandPage.clickUploadFile();
+		//testUtil.testWaitEleven();
+		  //testUtil.scrollDown();
+		  //testUtil.testWaitTwo();
 							
 	}
 	
@@ -68,9 +67,9 @@ public class CheckCommandPageTest extends TestBase{
 		//checkCommandPage.clickFillInComplete();
 		//testUtil.testWaitEight();
 		System.out.println("Test is passed");
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		testUtil.scrollUp();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		
 	}
 	

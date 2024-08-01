@@ -34,30 +34,30 @@ public class AddCommandPageTest extends TestBase{
 		checkCommandPage=new CheckCommandPage();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitFourteen();
-		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEleven();
-		//homePage.clickReactiesDropDown();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitFourteen();
+		  //homePage.clickAcceptAllCookies();
+		  //testUtil.testWaitEleven();
+		  //homePage.clickReactiesDropDown();
+		  //testUtil.testWaitEight();
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFourteen();
+		//testUtil.testWaitFourteen();
 		myAssignmentsPage.clickAddNewCommand();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		
 	}
 	
 	@Test
 	public void uploadFileTest()throws Exception {
 		addCommandPage.clickChooseFile();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		testUtil.uploadFile("D:\\Assignment.docx");
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		checkCommandPage=addCommandPage.clickUploadFile();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		testUtil.scrollUp();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		
 	}
 	
