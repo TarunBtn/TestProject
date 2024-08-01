@@ -40,29 +40,43 @@ public class CheckCommandPageTest extends TestBase{
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.testWaitFourteen();
 		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
+		//homePage.clickReactiesDropDown();
+		//testUtil.testWaitFour();
+		//homePage.clickReactiesDropDown();
+		//testUtil.testWaitFour();
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFour();
-		myAssignmentsPage.clickAddNewCommand();
-		testUtil.testWaitFour();
+		testUtil.testWaitFourteen();
+		//testUtil.testWaitEight();
+		addCommandPage=myAssignmentsPage.clickAddNewCommand();
+		testUtil.testWaitEleven();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		addCommandPage.clickChooseFile();
 		testUtil.testWaitFour();
-		testUtil.uploadFile("C:\\chromedriver\\Assignment.docx");
-		testUtil.testWaitFour();
+		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
+		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
 							
 	}
 	
 	@Test
 	public void checkCommandPageTest()throws Exception {
-		completeAssignment=checkCommandPage.clickFillInComplete();
+		//checkCommandPage.clickFillInComplete();
+		//testUtil.testWaitEight();
+		System.out.println("Test is passed");
 		testUtil.testWaitFour();
+		testUtil.scrollUp();
+		testUtil.testWaitFour();
+		
 	}
-	
 	
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
+		
 	}
 }

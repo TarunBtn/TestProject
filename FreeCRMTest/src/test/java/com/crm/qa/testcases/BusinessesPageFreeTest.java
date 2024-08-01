@@ -75,7 +75,7 @@ public class BusinessesPageFreeTest extends TestBase{
 		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		
 	}
 	

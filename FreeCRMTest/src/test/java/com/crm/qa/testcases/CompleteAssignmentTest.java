@@ -33,82 +33,154 @@ public class CompleteAssignmentTest extends TestBase{
 	public void setUp()throws Exception {
 		initialization();
 		loginPage=new LoginPage();
-		myAssignmentsPage=new MyAssignmentsPage();
 		addCommandPage=new AddCommandPage();
-		checkCommandPage=new CheckCommandPage();		
+		checkCommandPage=new CheckCommandPage();
+		myAssignmentsPage=new MyAssignmentsPage();
 		completeAssignment=new CompleteAssignment();
-		testUtil=new TestUtil();
+		testUtil=new TestUtil();		
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEight();		
-		/*myAssignmentsPage=homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFour();
-		addCommandPage=myAssignmentsPage.clickAddNewCommand();
+		//testUtil.testWaitEleven();		
+		homePage.clickMyAssignmentsLink();
+		testUtil.testWaitEleven();
+		//testUtil.testWaitEight();
+		//addCommandPage=myAssignmentsPage.clickAddNewCommand();
+		myAssignmentsPage.clickAddNewCommand();
+		testUtil.testWaitEight();
+		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		addCommandPage.clickChooseFile();		
 		testUtil.testWaitFour();
-		testUtil.uploadFile("D:\\Testfile.docx");
-		testUtil.testWaitFour();
+		testUtil.uploadFile("D:\\Assignment.docx");
+		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
+		testUtil.testWaitEight();
+		testUtil.scrollUp();
 		testUtil.testWaitFour();
-		checkCommandPage.clickFillInComplete();
-		testUtil.testWaitFour();*/
+		//checkCommandPage.clickFillInComplete();
+		//testUtil.testWaitEight();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
 	}
 	
 	@Test
 	public void completeAssignmentTest()throws Exception {
-		/*completeAssignment.selectCompany();
+		completeAssignment.clickCompanyDropDown();
 		testUtil.testWaitFour();
-		completeAssignment.selectSectorDropDown();
+		completeAssignment.selectCompany();
 		testUtil.testWaitFour();
-		completeAssignment.selectWorkLocation();
-		testUtil.testWaitFour();
-		try {
-			Driver.findElement(By.id("startdatumopdracht")).sendKeys("01-06-2023");
-				
-		}catch(ElementNotInteractableException e) {
-			e.printStackTrace();
-		}
-	
-		testUtil.testWaitFour();
-		testUtil.scrollUp();
-		testUtil.testWaitTwo();
-		testUtil.scrollUp();
-		testUtil.testWaitEleven();
-		//Generate description
-		completeAssignment.clickGenerateDescription();
-		testUtil.testWaitEleven();
-		testUtil.testWaitEleven();
-		completeAssignment.clickUseThisText();
-		testUtil.testWaitEight();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		//Select start date
-		completeAssignment.selectStartDateDropDown();
+		completeAssignment.assignmentName("QA EngineerEight");
+		testUtil.testWaitFour();
+		//completeAssignment.clickSectorDropDown();
 		//testUtil.testWaitTwo();
-		//completeAssignment.selectStartMonth();
+		//completeAssignment.selectSectorFromDropDown();
+		//testUtil.testWaitFour();
+		testUtil.scrollDown();
 		testUtil.testWaitFour();
-		completeAssignment.selectStartDate();
-		testUtil.testWaitFour();
-		//Select end date
-		completeAssignment.selectEndDateDropDown();
+		completeAssignment.clickDesciplineDropDown();
 		testUtil.testWaitTwo();
-		completeAssignment.selectEndYear();
+		completeAssignment.selectDescipline();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
+		completeAssignment.clickWorkLocation();
+		testUtil.testWaitTwo();
+		completeAssignment.selectWorkLocation("Punthorst, Netherlands");
+		testUtil.testWaitFour();
+		completeAssignment.clickWorkLocationTooltip();
+		testUtil.testWaitFour();
+		completeAssignment.clickWorkLocation();
+		testUtil.testWaitTwo();
+		completeAssignment.clickWorkLocationTooltip();
+		testUtil.testWaitFour();
+		completeAssignment.clickWorkingThinkingLevel();
+		testUtil.testWaitFour();
+		completeAssignment.selectWorkingThinkingLevel();
+		testUtil.testWaitFour();
+		completeAssignment.clickNextButton();
+		testUtil.testWaitEight();
+		//completeAssignment.clickNextButton();
+		//testUtil.testWaitFourteen();
+		//testUtil.scrollUp();
+		//testUtil.testWaitFour();
+		
+		//completeAssignment.selectWorkLocation();
+		//testUtil.testWaitFour();
+		//completeAssignment.clickWorkLocationTooltip();
+		//testUtil.testWaitFour();
+		//try {
+			//Driver.findElement(By.name("date")).sendKeys("01-08-2024");
+				
+		//}catch(ElementNotInteractableException e) {
+			//e.printStackTrace();
+		//}	
+		completeAssignment.clickProfileField();
+		testUtil.testWaitTwo();
+		completeAssignment.enterProfile("Database administrator");
+		testUtil.testWaitFour();
+		completeAssignment.clickProfileTooltip();
+		testUtil.testWaitFour();
+		completeAssignment.clickNextButton();
+		testUtil.testWaitEight();
+		testUtil.scrollUp();
+		testUtil.testWaitFour();
+		/*testUtil.scrollUp();
+	    testUtil.testWaitFour();
+		//Generate description
+	    try {
+		    completeAssignment.clickGenerateDescription();
+		    //testUtil.testWaitEleven();
+	   }catch(NoSuchElementException e) {
+	   	  e.printStackTrace();
+	   }
+	    testUtil.scrollDown();
+	    testUtil.testWaitFour();
+	    //testUtil.scrollDown();
+	    //testUtil.testWaitTwo();
+	    try {
+		   completeAssignment.clickUseThisText();
+	    }catch(ElementClickInterceptedException e) {
+	    	e.printStackTrace();
+	    }
+	    
+	    try {
+			   completeAssignment.clickUseThisTextOne();
+		    }catch(ElementClickInterceptedException e) {
+		    	e.printStackTrace();
+		    }
+		testUtil.testWaitEight();*/
+		//Select start date
+	    completeAssignment.clickStartDateDropDown();
+		testUtil.testWaitFour();
+		//completeAssignment.selectStartYear();
+		//testUtil.testWaitTwo();
+		completeAssignment.selectStartDate();
+		testUtil.testWaitFour();	
+		//Select end date
+		completeAssignment.clickEndDateDropDown();
+		testUtil.testWaitFour();
+		//completeAssignment.selectEndYear();
+		//testUtil.testWaitTwo();
+		//completeAssignment.selectEndYear();
+		//testUtil.testWaitTwo();
 		completeAssignment.selectEndDate();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		//NumberofHours
-		completeAssignment.selectNumberOfHours();
+		/*completeAssignment.selectNumberOfHours();
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		//selectWorkingThinkingLevel
 		completeAssignment.selectWorkingThinkingLevel();
 		testUtil.testWaitFour();
-		//Select FieldOfExpertise
+		//Select FieldOfExpertise/Descipline
+		completeAssignment.clickFieldOfExpertise();
+		testUtil.testWaitFour();
 		completeAssignment.selectFieldOfExpertise();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -117,20 +189,53 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		testUtil.scrollDown();
+		//Add Skills and remove skills
+		completeAssignment.clickSkillsField();
 		testUtil.testWaitTwo();
-		//completeAssignment.clickSaveButton();*/
+		completeAssignment.enterSkills("Security Management");
+		testUtil.testWaitFour();
+		completeAssignment.skillsToolTip();
+		testUtil.testWaitTwo();
+		completeAssignment.enterSkills("Databases");
+		testUtil.testWaitFour();
+		completeAssignment.skillsToolTip();
+		testUtil.testWaitTwo();
+		completeAssignment.enterSkills("Test Engineering");
+		testUtil.testWaitFour();
+		completeAssignment.skillsToolTip();
+		testUtil.testWaitTwo();
+		completeAssignment.unSelectSkillsOne();
+		testUtil.testWaitTwo();
+		completeAssignment.unSelectSkillsTwo();
+		testUtil.testWaitTwo();*/
+		completeAssignment.clickNextButton();
+		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
+		completeAssignment.clickNextButton();
+		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
+		completeAssignment.clickNextButton();
+		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
+		completeAssignment.clickVisibleDateTo();
+		testUtil.testWaitFour();
+		completeAssignment.selectVisibleDateTo();
+		testUtil.testWaitFour();
+		//completeAssignment.clickSaveButton();
 		homePage.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePage.clickSignOutBtn();
 		testUtil.testWaitEight();
-		
+			
 	}
-	
 	
 	@AfterMethod
 	public void tearDown() {
-		Driver.quit();
+		//Driver.quit();
+		
 	}
 
 }

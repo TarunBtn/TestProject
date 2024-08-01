@@ -198,7 +198,7 @@ public class AssignmentsPageAdminTest extends TestBase{
 	  	homePageAdmin.clickSignOutLink();
 	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();
-	  	testUtil.testWaitEight();
+	  	testUtil.testWaitFour();
 	}
 	
 	@AfterMethod
