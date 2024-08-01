@@ -54,7 +54,7 @@ public class MatchPageAdminTest extends TestBase{
 		testUtil.testWaitFourteen();
 		//Assignment Dropdown
 		matchPageAdmin.clickAssignmentDropDown();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		matchPageAdmin.selectAssignmentValue();
 		//testUtil.testWaitEight();
 		  //matchPage.cancelCommandValue();
