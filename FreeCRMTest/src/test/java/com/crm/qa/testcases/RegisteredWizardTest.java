@@ -29,6 +29,7 @@ public class RegisteredWizardTest extends TestBase{
 		loginPage=new LoginPage();
 		registeredWizard=new RegisteredWizard();
 		testUtil=new TestUtil();
+				
 	}
 	
 	@Test
@@ -162,9 +163,9 @@ public class RegisteredWizardTest extends TestBase{
 		Thread.sleep(8000);
 		
 	}
-		
+	
 	@AfterMethod
 	public void tearDown() {
-		Driver.quit();
+		//Driver.quit();
 	}
 }
