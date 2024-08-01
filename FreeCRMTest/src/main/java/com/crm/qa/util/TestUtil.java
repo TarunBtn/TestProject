@@ -6,14 +6,15 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.util.Set;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 
 import com.crm.qa.base.TestBase;
 
 public class TestUtil extends TestBase{
 	
-	public static long PAGE_LOAD_TIMEOUT = 20;
-	public static long IMPLICIT_WAIT = 20;
+	public static long PAGE_LOAD_TIMEOUT = 40;
+	public static long IMPLICIT_WAIT = 40;
 	
 	public void switchToFrameOne() {
 		Driver.switchTo().frame("mainpanel");
@@ -23,6 +24,10 @@ public class TestUtil extends TestBase{
 		Driver.switchTo().frame("");
 	}
 	
+	public void testWait(long millis)throws Exception {
+		Thread.sleep(millis);
+	}
+
 	public void testWaitTwo()throws Exception {
 		Thread.sleep(2000);
 	}
@@ -63,12 +68,38 @@ public class TestUtil extends TestBase{
 		jsxfive.executeScript("window.scrollBy(-450,0)");
 	}
 	
-	public void switchToWindow() {
+	public void switchToWindow01() {
+		Set<String> AllWindowHandles=Driver.getWindowHandles();
+		String window01=(String)AllWindowHandles.toArray()[0];
+		String window02=(String)AllWindowHandles.toArray()[1];
+		
+		Driver.switchTo().window(window01);
+		
+	}
+	
+	public void switchToWindow02() {
 		Set<String> AllWindowHandles=Driver.getWindowHandles();
 		String window01=(String)AllWindowHandles.toArray()[0];
 		String window02=(String)AllWindowHandles.toArray()[1];
 		
 		Driver.switchTo().window(window02);
+		
+	}
+	
+	public void switchToWindow03() {
+		Set<String> AllWindowHandles=Driver.getWindowHandles();
+		String window01=(String)AllWindowHandles.toArray()[0];
+		String window02=(String)AllWindowHandles.toArray()[1];
+		String window03=(String)AllWindowHandles.toArray()[2];
+		
+		Driver.switchTo().window(window03);
+		
+	}
+	
+	public void switchToAlert(String value) {
+		Alert alert=Driver.switchTo().alert();
+		alert.sendKeys(value);
+		
 	}
 	
 	//Upload file
