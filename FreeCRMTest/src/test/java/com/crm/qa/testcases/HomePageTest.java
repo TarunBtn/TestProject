@@ -32,46 +32,45 @@ public class HomePageTest extends TestBase{
 		myAssignmentsPage=new MyAssignmentsPage();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
-		testUtil.testWaitFourteen();
-		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEleven();
+		//testUtil.testWaitFourteen();
+		  //homePage.clickAcceptAllCookies();
+		  //testUtil.testWaitEleven();
 				
 	}
 	
 	@Test(priority=1)
 	public void homePageTitleTest()throws Exception {
 		String title=homePage.verifyHomePageTitle();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		Assert.assertEquals(title, "Younited®");
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		homePage.clickSignOutLink();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		homePage.clickSignOutBtn();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 	}
 	
 	@Test(priority=2)
 	public void verifyImageLogoTest()throws Exception {
 		Boolean logo=homePage.verifyImageLogo();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		Assert.assertTrue(logo);
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		homePage.clickSignOutLink();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		homePage.clickSignOutBtn();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 	}
 	
 	@Test(priority=3)
 	public void myAssignmentsPage()throws Exception {
 		//myAssignmentsPage=homePage.clickMyAssignmentsLink();
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFourteen();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitFourteen();
 		homePage.clickSignOutLink();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		homePage.clickSignOutBtn();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 	}
 	
 	

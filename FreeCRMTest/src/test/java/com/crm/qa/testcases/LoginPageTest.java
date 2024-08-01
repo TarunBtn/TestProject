@@ -29,27 +29,27 @@ public class LoginPageTest extends TestBase{
 	public void loginPageTitleTest()throws Exception {
 		String title=loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Log in | Younited® platform");
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		
 	}
 	
 	@Test(priority=2)
 	public void imageLogoTest()throws Exception {
 		System.out.println("Test is passed");
-		//boolean flag=loginPage.validateImageLogo();
-		//Assert.assertTrue(flag);
-		testUtil.testWaitFour();
+		  //boolean flag=loginPage.validateImageLogo();
+		  //Assert.assertTrue(flag);
+		//testUtil.testWaitFour();
 		
 	}
 	
 	@Test(priority=3)
 	public void loginTest()throws Exception {
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitFourteen();
+		//testUtil.testWaitFourteen();
 		homePage.clickSignOutLink();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		homePage.clickSignOutBtn();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 	}
 	
 	@AfterMethod

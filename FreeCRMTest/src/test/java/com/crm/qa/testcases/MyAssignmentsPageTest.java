@@ -35,60 +35,60 @@ public class MyAssignmentsPageTest extends TestBase{
 		myAssignmentsPage=new MyAssignmentsPage();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitFourteen();
-		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEleven();		
+		//testUtil.testWaitFourteen();
+		  //homePage.clickAcceptAllCookies();
+		  //testUtil.testWaitEleven();		
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitEleven();
-		//testUtil.testWaitEight();
-		//checkCommandPage=new CheckCommandPage();
+		//testUtil.testWaitEleven();
+		  //testUtil.testWaitEight();
+		  //checkCommandPage=new CheckCommandPage();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 													
 	}
 	
 	@Test
 	public void myAssignmentsPageTest()throws Exception {
 		myAssignmentsPage.enterValueInFilter("Test");
-		testUtil.testWaitEleven();
+		//testUtil.testWaitEleven();
 		myAssignmentsPage.clickResetFilter();
-		testUtil.testWaitEleven();
+		//testUtil.testWaitEleven();
 		myAssignmentsPage.clickChooseCompanyDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myAssignmentsPage.selectCompanyFromDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myAssignmentsPage.clickChooseCompanyDropDown();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		myAssignmentsPage.clickStatusDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myAssignmentsPage.selectStatusFromDropDownOpen();
-		testUtil.testWaitEight();
-		//myAssignmentsPage.StatusDropDown();
-		//testUtil.testWaitFour();
-		//myAssignmentsPage.selectStatusFromDropDownClosed();
-		//testUtil.testWaitFour();
+		//testUtil.testWaitEight();
+		  //myAssignmentsPage.StatusDropDown();
+		  //testUtil.testWaitFour();
+		  //myAssignmentsPage.selectStatusFromDropDownClosed();
+		  //testUtil.testWaitFour();
 		myAssignmentsPage.clickStatusDropDown();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		myAssignmentsPage.clickStatusDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myAssignmentsPage.clearStatusFromDropDown();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		myAssignmentsPage.clickStatusDropDown();
-		testUtil.testWaitTwo();
+		//testUtil.testWaitTwo();
 		homePage.clickSignOutLink();
-		testUtil.testWaitFour();
+		//testUtil.testWaitFour();
 		homePage.clickSignOutBtn();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 	}
 	
 	@AfterMethod
