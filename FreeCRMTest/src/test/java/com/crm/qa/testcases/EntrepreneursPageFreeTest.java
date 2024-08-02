@@ -53,7 +53,11 @@ public class EntrepreneursPageFreeTest extends TestBase{
 			e.printStackTrace();
 		}
 		//testUtil.testWaitFour();
-		entrepreneursPageFree.selectWorkingThinkingLevel();
+		try {
+		    entrepreneursPageFree.selectWorkingThinkingLevel();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
 		//testUtil.testWaitFour();
 		entrepreneursPageFree.selectWorkingThinkingLevel();
 		//testUtil.testWaitFour();
