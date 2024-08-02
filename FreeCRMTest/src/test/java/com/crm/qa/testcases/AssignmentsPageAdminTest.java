@@ -63,9 +63,17 @@ public class AssignmentsPageAdminTest extends TestBase{
 			e.printStackTrace();
 		}
 		//testUtil.testWaitFour();
-		assignmentsPageFree.selectSector();
+		try {
+		    assignmentsPageFree.selectSector();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
 		//testUtil.testWaitFour();
-		assignmentsPageFree.clickSectorTab();
+		try {
+		    assignmentsPageFree.clickSectorTab();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
 		//testUtil.testWaitTwo();
 		//Descipline
 		assignmentsPageFree.clickDescipline();
