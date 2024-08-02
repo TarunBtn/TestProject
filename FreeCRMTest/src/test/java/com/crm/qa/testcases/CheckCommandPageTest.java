@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -51,7 +52,11 @@ public class CheckCommandPageTest extends TestBase{
 		//testUtil.testWaitEleven();
 		testUtil.scrollDown();
 		//testUtil.testWaitTwo();
-		addCommandPage.clickChooseFile();
+		try {
+		    addCommandPage.clickChooseFile();
+		}catch(ElementClickInterceptedException e) {
+			e.printStackTrace();
+		}
 		//testUtil.testWaitFour();
 		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
 		//testUtil.testWaitEight();
