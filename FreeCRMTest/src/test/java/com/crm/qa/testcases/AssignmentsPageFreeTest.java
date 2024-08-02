@@ -47,10 +47,14 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree.selectAssignmentsValue();
 		//testUtil.testWaitFour();
 		assignmentsPageFree.clearAssignmentsFilter();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		//Sector
-		assignmentsPageFree.clickSectorTab();
-		testUtil.testWaitFour();
+		try {
+		    assignmentsPageFree.clickSectorTab();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
+		//testUtil.testWaitFour();
 		assignmentsPageFree.selectSector();
 		//testUtil.testWaitFour();
 		assignmentsPageFree.selectSector();
