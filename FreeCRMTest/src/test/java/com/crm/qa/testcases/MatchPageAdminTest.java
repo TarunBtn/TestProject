@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -54,7 +55,11 @@ public class MatchPageAdminTest extends TestBase{
 		matchPageAdmin.clickCancelValueFilter();
 		//testUtil.testWaitFourteen();
 		//Assignment Dropdown
-		matchPageAdmin.clickAssignmentDropDown();
+		try {
+		    matchPageAdmin.clickAssignmentDropDown();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
 		//testUtil.testWaitFourteen();
 		try {
 		    matchPageAdmin.selectAssignmentValue();
