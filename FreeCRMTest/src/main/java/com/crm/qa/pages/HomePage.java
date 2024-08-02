@@ -11,55 +11,89 @@ public class HomePage extends TestBase{
 	//Page factory or Object Repository
 	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[2]/a/img")
 	WebElement userNameLabel;
-	
-	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div[1]/a/img[1]")
+		
+	@FindBy(xpath="//img[@class='d-none d-lg-block']")
 	WebElement imageLogo;
 	
+	@FindBy(xpath="//div[@class='multiselect__select']")
+	WebElement reactiesDropDown;
+		
 	@FindBy(xpath="//a[@class='nav-link'][normalize-space()='Mijn opdrachten']")
 	WebElement myAssignmentsLink;
-	
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[1]/a")
+		
+	@FindBy(xpath="//a[@class='nav-link active']")
 	WebElement dashboardLink;
-	
-	@FindBy(xpath="//*[@id=\"navbarSupportedContent\"]/ul/li[2]/a")
+		
+	@FindBy(xpath="//a[normalize-space()='Matchen']")
 	WebElement matchLink;
-	
-	@FindBy(xpath="//*[@id=\"dashboard\"]/div[3]/div[2]/div/div[2]/div[2]/div[2]/div[1]/button/span")
+		
+	@FindBy(xpath="/html/body/div[3]/div[2]/div/div[2]/div[2]/div[2]/div[1]/button/span")
 	WebElement acceptAllCookies;
+	
+	@FindBy(xpath="//button[@class='dropdown-toggle dropdown-button profile-img']")
+	WebElement userLogo;
+	
+	@FindBy(xpath="//a[@class='manage-profile-button flex-grow-1']")
+	WebElement manageProfileLink;
+	
+	@FindBy(xpath="//a[normalize-space()='Reacties']")
+	WebElement myReactionsLink;
+	
+	@FindBy(xpath="//a[normalize-space()='Mijn bedrijf / bedrijven']")
+	WebElement myCompanyLink;
 	
 	@FindBy(xpath="//a[@class='user-infoNav-item-link logout']//span[@class='material-icons'][normalize-space()='logout']")
 	WebElement signOutLink;
 	
 	@FindBy(xpath="//button[@class='btn btn-primary btn btn-primary']")
 	WebElement signOutBtn;
-	
+		
 	//Initialization
 	public HomePage() {
 		PageFactory.initElements(Driver, this);
 	}
-	
+		
 	//Actions
 	public String verifyHomePageTitle() {
 		return Driver.getTitle();
 	}
-	
+		
 	public boolean verifyImageLogo() {
 		return imageLogo.isDisplayed();
 	}
 	
-	public HomePageFree clickMatchLink() {
+	public void clickReactiesDropDown() {
+		reactiesDropDown.click();
+	}
+		
+	public MatchPage clickMatchLink() {
 		matchLink.click();
-		return new HomePageFree();
+		return new MatchPage();
 	}
-	
-	public MyAssignmentsPage clickMyAssignmentsLink()throws Exception {
+		
+	public void clickMyAssignmentsLink() {
 		myAssignmentsLink.click();
-		Thread.sleep(8000);
-		return new MyAssignmentsPage();
+		//return new MyAssignmentsPage();
 	}
-	
+		
 	public void clickAcceptAllCookies() {
 		acceptAllCookies.click();
+	}
+	
+	public void clickUserLogo() {
+		userLogo.click();
+	}
+	
+	public void clickManageProfileLink() {
+		manageProfileLink.click();
+	}
+	
+	public void clickMyReactionsTab() {
+		myReactionsLink.click();
+	}
+	
+	public void clickMycompanyTab() {
+		myCompanyLink.click();
 	}
 	
 	public void clickSignOutLink() {
@@ -69,8 +103,6 @@ public class HomePage extends TestBase{
 	public void clickSignOutBtn() {
 		signOutBtn.click();
 	}
-	
-	
 	
 
 }
