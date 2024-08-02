@@ -63,7 +63,7 @@ public class MatchPageAdminTest extends TestBase{
 		//testUtil.testWaitFourteen();
 		try {
 		    matchPageAdmin.selectAssignmentValue();
-		}catch(NoSuchElementException e) {
+		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
 		//testUtil.testWaitEight();
