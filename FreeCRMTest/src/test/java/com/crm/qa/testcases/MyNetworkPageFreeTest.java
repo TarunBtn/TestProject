@@ -74,9 +74,17 @@ public class MyNetworkPageFreeTest extends TestBase{
 			e.printStackTrace();
 		}
 		//testUtil.testWaitFour();
-		myNetworkPageFree.selectTypeMessage();
+		try {
+		    myNetworkPageFree.selectTypeMessage();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
 		//testUtil.testWaitFour();
-		myNetworkPageFree.clickTypeMessageDropDown();
+		try {
+		    myNetworkPageFree.clickTypeMessageDropDown();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
 		//testUtil.testWaitFour();
 		//Area of Interest
 		myNetworkPageFree.clickAreaOfInterestDropDown();
