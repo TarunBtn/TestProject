@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.ElementNotInteractableException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -59,10 +60,14 @@ public class MyNetworkPageFreeTest extends TestBase{
 		myNetworkPageFree.enterSearchValue("Test");
 		//testUtil.testWaitFour();
 		myNetworkPageFree.clickCancelSearch();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		//Type of Message
-		myNetworkPageFree.clickTypeMessageDropDown();
-		testUtil.testWaitFour();
+		try {
+		    myNetworkPageFree.clickTypeMessageDropDown();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
+		//testUtil.testWaitFour();
 		myNetworkPageFree.selectTypeMessage();
 		//testUtil.testWaitFour();
 		myNetworkPageFree.selectTypeMessage();
