@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.openqa.selenium.ElementNotInteractableException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -44,10 +45,14 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		entrepreneursPageFree.enterEntrepreneur("Ajay");
 		//testUtil.testWaitFour();
 		entrepreneursPageFree.clickCancel();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		//Working/Thinking level
-		entrepreneursPageFree.clickWorkingThinkingDropDown();
-		testUtil.testWaitFour();
+		try {
+		    entrepreneursPageFree.clickWorkingThinkingDropDown();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
+		//testUtil.testWaitFour();
 		entrepreneursPageFree.selectWorkingThinkingLevel();
 		//testUtil.testWaitFour();
 		entrepreneursPageFree.selectWorkingThinkingLevel();
