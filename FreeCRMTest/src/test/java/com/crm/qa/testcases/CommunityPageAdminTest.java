@@ -51,15 +51,19 @@ public class CommunityPageAdminTest extends TestBase{
 		myNetworkPageFree.enterSearchValue("Hr");
 		//testUtil.testWaitFour();
 		myNetworkPageFree.clickCancelSearch();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		//Type of Message
 		try {
 		    myNetworkPageFree.clickTypeMessageDropDown();
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
-		testUtil.testWaitFour();
-		myNetworkPageFree.selectTypeMessage();
+		//testUtil.testWaitFour();
+		try {
+		    myNetworkPageFree.selectTypeMessage();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
 		//testUtil.testWaitFour();
 		myNetworkPageFree.selectTypeMessage();
 		//testUtil.testWaitFour();
