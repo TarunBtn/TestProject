@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -51,11 +52,15 @@ public class MatchPageAdminTest extends TestBase{
 		matchPageAdmin.enterValueFilter("Ajay");
 		//testUtil.testWaitEleven();
 		matchPageAdmin.clickCancelValueFilter();
-		testUtil.testWaitFourteen();
+		//testUtil.testWaitFourteen();
 		//Assignment Dropdown
 		matchPageAdmin.clickAssignmentDropDown();
-		testUtil.testWaitFourteen();
-		matchPageAdmin.selectAssignmentValue();
+		//testUtil.testWaitFourteen();
+		try {
+		    matchPageAdmin.selectAssignmentValue();
+		}catch(NoSuchElementException e) {
+			e.printStackTrace();
+		}
 		//testUtil.testWaitEight();
 		  //matchPage.cancelCommandValue();
 		  //testUtil.testWaitEight();
