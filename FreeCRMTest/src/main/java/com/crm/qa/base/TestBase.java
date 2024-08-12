@@ -23,7 +23,7 @@ public class TestBase {
 	public TestBase(){		
 		try {
 			prop=new Properties();
-			FileInputStream ip = new FileInputStream("C:/Users/no02/git/TestProject/FreeCRMTest/src/main/java/com/crm/qa/config/config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\no02\\git\\TestProject\\FreeCRMTest\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
 			prop.load(ip);			
 			
 		}catch(FileNotFoundException e) {
