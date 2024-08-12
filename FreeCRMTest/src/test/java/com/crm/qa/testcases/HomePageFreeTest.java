@@ -28,7 +28,7 @@ public class HomePageFreeTest extends TestBase{
 		testUtil=new TestUtil();
 		assignmentsPageFree=new AssignmentsPageFree();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		//testUtil.testWaitFourteen();
+		testUtil.testWaitFourteen();
 		  //homePageFree.clickAcceptAllCookies();
 		  //testUtil.testWaitEight();
 				
