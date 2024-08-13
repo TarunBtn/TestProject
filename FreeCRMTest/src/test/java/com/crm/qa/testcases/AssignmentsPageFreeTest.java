@@ -31,11 +31,11 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree=new AssignmentsPageFree();
 		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		//testUtil.testWaitFourteen();	
-		  //homePageFree.clickAcceptAllCookies();
-		  //testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();	
+		//homePageFree.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
 		homePageFree.clickAssignmentsLink();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 			
 	}
 	
@@ -43,176 +43,164 @@ public class AssignmentsPageFreeTest extends TestBase{
 	public void clickFiltersTest()throws Exception {
 		//ValueFilterAssignment
 		assignmentsPageFree.enterAssignmentsName("QA EngineerEight");
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectAssignmentsValue();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clearAssignmentsFilter();
-		//testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		//Sector
 		try {
 		    assignmentsPageFree.clickSectorTab();
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
-		//testUtil.testWaitFour();
-		try {
-		    assignmentsPageFree.selectSector();
-		}catch(ElementNotInteractableException e) {
-			e.printStackTrace();
-		}
-		//testUtil.testWaitFour();
-		try {
-		    assignmentsPageFree.selectSector();
-		}catch(ElementNotInteractableException e) {
-			e.printStackTrace();
-		}
-		//testUtil.testWaitFour();
-		try {
-		    assignmentsPageFree.clickSectorTab();
-		}catch(ElementNotInteractableException e) {
-			e.printStackTrace();
-		}
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
+		assignmentsPageFree.selectSector();
+		testUtil.testWaitFour();
+		assignmentsPageFree.selectSector();
+		testUtil.testWaitFour();
+		assignmentsPageFree.clickSectorTab();
+		testUtil.testWaitFour();
 		//Descipline
 		assignmentsPageFree.clickDescipline();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectDescipline();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectDescipline();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickDescipline();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		//Skill
 		assignmentsPageFree.clickSkillTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.enterSkill();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.enterSkillValue("Postman");
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectSkillToolTip();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickSkillTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.applySkillFilter();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickSkillTab();
+		testUtil.testWaitFour();
+		//assignmentsPageFree.clickSkillTab();
 		//testUtil.testWaitFour();
-		  //assignmentsPageFree.clickSkillTab();
-		  //testUtil.testWaitFour();
 		assignmentsPageFree.clickResetFilterSkill();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickSkillTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickCancelSkill();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		//Duration
 		assignmentsPageFree.clickDuration();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectDuration();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickDuration();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickDuration();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectDuration();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickDuration();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		//Work & Thinking level
 		assignmentsPageFree.clickWorkAndThinkingLevel();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 	    assignmentsPageFree.selectWorkAndThinkingLevel();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 	    assignmentsPageFree.clickWorkAndThinkingLevel();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 	    assignmentsPageFree.clickWorkAndThinkingLevel();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectWorkAndThinkingLevel();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickWorkAndThinkingLevel();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		//Hours
 	    assignmentsPageFree.clickHoursTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectHours();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.applyHoursFilter();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHoursTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.resetHoursFilter();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHoursTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickCancelHours();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		//Hourly rate
 		assignmentsPageFree.clickHourlyRateTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectHourlyRate();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.applyHourlyRateFilter();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHourlyRateTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.resetHourlyRateFilter();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHourlyRateTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickCancelHourlyRate();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		//Location
 		assignmentsPageFree.clickLocationTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.enterLocation("Noordwijk Netherlands");
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		try {
 			  	assignmentsPageFree.enterLocationToolTip();
-			  	//testUtil.testWaitFour();
+			  	testUtil.testWaitFour();
 		}catch(ElementNotInteractableException e) {
 			   e.printStackTrace();
 		}
 		testUtil.testWaitFour();
 		try {
 			  	assignmentsPageFree.applyLocationFilter();
-			  	//testUtil.testWaitFour();
+			  	testUtil.testWaitFour();
 		}catch(NoSuchElementException e) {
 			    e.printStackTrace();
 		}
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickLocationTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickLocationTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.resetLocation();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		//View matches
 		assignmentsPageFree.clickViewMatches();
-		//testUtil.testWaitEleven();
+		testUtil.testWaitEleven();
 		assignmentsPageFree.clickViewMatches();
-		//testUtil.testWaitEleven();
+		testUtil.testWaitEleven();
 		//Favourites
 		assignmentsPageFree.clickFavorites();
-		//testUtil.testWaitEleven();
+		testUtil.testWaitEleven();
 		assignmentsPageFree.clickFavorites();
-		//testUtil.testWaitEleven();
+		testUtil.testWaitEleven();
 		//Sorting
 		assignmentsPageFree.clickSortingDropDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectPublicationDateOldFirst();
-		//testUtil.testWaitEight();	
+		testUtil.testWaitEight();	
 		assignmentsPageFree.selectAtHourlyRate();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectByNumberOfHours();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectPublicationDateNewFirst();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickSortingDropDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		homePageFree.clickSignOutLink();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		
 	}
 	
