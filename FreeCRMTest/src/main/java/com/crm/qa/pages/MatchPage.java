@@ -18,25 +18,6 @@ public class MatchPage extends TestBase{
 		
 		@FindBy(xpath="//span[@class='material-icons reset_assignment md-18']")
 		WebElement clickCancelAssignmentFilter;
-		
-		//For MatchPageAdminTest side
-		@FindBy(id="filter-search-input")
-		WebElement assignmentFilter;
-		
-		//For MatchPageAdminTest side
-		@FindBy(xpath="//*[@id=\"filter\"]/div[1]/div/span")
-		WebElement clickCancelAssignmentFilterOne;
-		
-		//For MatchPageAdminTest side
-		@FindBy(xpath="//*[@id=\"dropdown-assignment\"]/div/div[1]")
-		WebElement clickCommandDropDown;
-		
-		//For MatchPageAdminTest side
-		@FindBy(xpath="//span[contains(text(),'Managementassistente')]")
-		WebElement selectCommandValue;
-				
-		@FindBy(xpath="//*[@id=\"dropdown-assignment\"]/span")
-		WebElement cancelCommand;
 				
 		@FindBy(xpath="//*[@id=\"dropdown-beschikbaar\"]/button")
 		WebElement availabilityDropDown;
@@ -53,7 +34,7 @@ public class MatchPage extends TestBase{
 		@FindBy(id="dropdown-location")
 		WebElement location;
 				
-		@FindBy(id="map")
+		@FindBy(xpath="//input[@id='map']")
 		WebElement enterLocation;
 				
 		@FindBy(id="dropdown-location-and-distance-apply")
@@ -152,31 +133,6 @@ public class MatchPage extends TestBase{
 				
 		public void selectAssignmentFilter() {
 			selectAssignmentFilter.click();
-		}
-		
-		//For MatchPageAdminTest side
-		public void clickAssignmentFilter() {
-			assignmentFilter.click();
-		}
-		//For MatchPageAdminTest side		
-		public void enterAssignmentFilter(String value) {
-			assignmentFilter.sendKeys(value);
-		}
-		//For MatchPageAdminTest side
-		public void clickCancelAssignmentFilter() {
-			clickCancelAssignmentFilter.click();
-		}
-		//For MatchPageAdminTest side		
-		public void clickCommandDropDown() {
-			clickCommandDropDown.click();
-		}
-		//For MatchPageAdminTest side		
-		public void selectCommandValue() {
-			selectCommandValue.click();
-		}
-		//For MatchPageAdminTest side		
-		public void cancelCommandValue() {
-			cancelCommand.click();
 		}
 				
 		public void clickAvailabilityDropDown() {
