@@ -30,94 +30,78 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil=new TestUtil();
 		entrepreneursPageFree=new EntrepreneursPageFree();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		//testUtil.testWaitFourteen();
-		  //homePageFree.clickAcceptAllCookies();
-		  //testUtil.testWaitEleven();
-		  //homePageFree.suitableAssignments();
-		  //testUtil.testWaitFour();
+		testUtil.testWaitFourteen();
+		//homePageFree.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
+		//homePageFree.suitableAssignments();
+		//testUtil.testWaitFour();
 		homePageFree.clickEntrepreneurTab();
-		//testUtil.testWaitFourteen();
+		testUtil.testWaitFourteen();
 				
 	}
 	
 	@Test
 	public void entrepreneurPageFilter()throws Exception {
 		entrepreneursPageFree.enterEntrepreneur("Ajay");
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.clickCancel();
-		//testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		//Working/Thinking level
-		try {
-		    entrepreneursPageFree.clickWorkingThinkingDropDown();
-		}catch(ElementNotInteractableException e) {
-			e.printStackTrace();
-		}
-		//testUtil.testWaitFour();
-		try {
-		    entrepreneursPageFree.selectWorkingThinkingLevel();
-		}catch(ElementNotInteractableException e) {
-			e.printStackTrace();
-		}
-		//testUtil.testWaitFour();
-		try {
-		    entrepreneursPageFree.selectWorkingThinkingLevel();
-		}catch(ElementNotInteractableException e) {
-			e.printStackTrace();
-		}
-		//testUtil.testWaitFour();
-		try {
-		    entrepreneursPageFree.clickWorkingThinkingDropDown();
-		}catch(ElementNotInteractableException e) {
-			e.printStackTrace();
-		}
-		//testUtil.testWaitTwo();
+		entrepreneursPageFree.clickWorkingThinkingDropDown();
+		testUtil.testWaitTwo();
+		entrepreneursPageFree.selectWorkingThinkingLevel();
+		testUtil.testWaitFour();
+		entrepreneursPageFree.selectWorkingThinkingLevel();
+		testUtil.testWaitFour();
+		entrepreneursPageFree.clickWorkingThinkingDropDown();
+		testUtil.testWaitTwo();
 		//Descipline
 		entrepreneursPageFree.clickDesciplineDropDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectDescipline();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.selectDescipline();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.clickDesciplineDropDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		//Area of Interest
 		entrepreneursPageFree.clickAreaOfInterestDropDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectAreaOfInterest();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.selectAreaOfInterest();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.clickAreaOfInterestDropDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		//Skills
 		entrepreneursPageFree.clickSkillsTab();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		entrepreneursPageFree.enterSkill();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		entrepreneursPageFree.enterSkill("Postman");
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.selectSkillToolTip();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.clickSkillsTab();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		entrepreneursPageFree.clickApplyFilter();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		entrepreneursPageFree.clickSkillsTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.clickResetFilter();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		entrepreneursPageFree.clickSortingDropDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectSortingZtoA();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.selectSortingAtoZ();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.clickSortingDropDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		homePageFree.clickSignOutLink();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		
 	}
 	
