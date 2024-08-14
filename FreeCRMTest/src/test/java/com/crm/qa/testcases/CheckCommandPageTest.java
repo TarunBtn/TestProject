@@ -39,7 +39,7 @@ public class CheckCommandPageTest extends TestBase{
 		completeAssignment=new CompleteAssignment();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		//testUtil.testWaitFourteen();
+		testUtil.testWaitFourteen();
 		  //homePage.clickAcceptAllCookies();
 		  //testUtil.testWaitEleven();
 		  //homePage.clickReactiesDropDown();
@@ -47,11 +47,11 @@ public class CheckCommandPageTest extends TestBase{
 		  //homePage.clickReactiesDropDown();
 		  //testUtil.testWaitFour();
 		homePage.clickMyAssignmentsLink();
-		//testUtil.testWaitFourteen();
+		testUtil.testWaitFourteen();
 		addCommandPage=myAssignmentsPage.clickAddNewCommand();
-		//testUtil.testWaitEleven();
+		testUtil.testWaitEleven();
 		testUtil.scrollDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		try {
 		    addCommandPage.clickChooseFile();
 		}catch(ElementClickInterceptedException e) {
@@ -59,9 +59,9 @@ public class CheckCommandPageTest extends TestBase{
 		}
 		//testUtil.testWaitFour();
 		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
-		//testUtil.testWaitEleven();
+		testUtil.testWaitEleven();
 		  //testUtil.scrollDown();
 		  //testUtil.testWaitTwo();
 							
@@ -72,9 +72,9 @@ public class CheckCommandPageTest extends TestBase{
 		//checkCommandPage.clickFillInComplete();
 		//testUtil.testWaitEight();
 		System.out.println("Test is passed");
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		testUtil.scrollUp();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		
 	}
 	
