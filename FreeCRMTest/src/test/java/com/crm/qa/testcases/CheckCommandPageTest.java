@@ -57,7 +57,7 @@ public class CheckCommandPageTest extends TestBase{
 		}catch(ElementClickInterceptedException e) {
 			e.printStackTrace();
 		}
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
