@@ -29,7 +29,7 @@ public class HomePageAdminTest extends TestBase{
 		assignmentsPageAdmin=new AssignmentsPageAdmin();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		//testUtil.testWaitFourteen();
+		testUtil.testWaitFourteen();
 		  //homePageAdmin.clickAcceptAllCookies();
 		  //testUtil.testWaitEleven();
 		  //testUtil.testWaitFour();
@@ -40,11 +40,11 @@ public class HomePageAdminTest extends TestBase{
 	public void test()throws Exception {
 		//testUtil.testWaitEight();
 		assignmentsPageAdmin=homePageAdmin.clickAssignmentsTab();
-		//testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		homePageAdmin.clickSignOutLink();
-	  	//testUtil.testWaitFour();
+	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();
-	  	//testUtil.testWaitEight();
+	  	testUtil.testWaitEight();
 	}
 	
 	@AfterMethod

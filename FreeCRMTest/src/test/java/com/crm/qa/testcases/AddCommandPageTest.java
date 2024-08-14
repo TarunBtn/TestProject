@@ -41,7 +41,7 @@ public class AddCommandPageTest extends TestBase{
 		  //homePage.clickReactiesDropDown();
 		  //testUtil.testWaitEight();
 		homePage.clickMyAssignmentsLink();
-		//testUtil.testWaitFourteen();
+		testUtil.testWaitFourteen();
 		myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitEight();
 		testUtil.scrollDown();
@@ -54,15 +54,15 @@ public class AddCommandPageTest extends TestBase{
 		addCommandPage.clickChooseFile();
 		testUtil.testWaitEight();
 		testUtil.uploadFile("D:\\Assignment.docx");
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		try {
 		    checkCommandPage=addCommandPage.clickUploadFile();
 		}catch(NoSuchElementException e) {
 			e.printStackTrace();
 		}
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		testUtil.scrollUp();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		
 	}
 	
