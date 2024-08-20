@@ -57,13 +57,13 @@ public class TestBase {
 		Driver.manage().deleteAllCookies();
 		Driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		Driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		Thread.sleep(4000);
-		try {
-		    Driver.get(prop.getProperty("url"));
-		}catch(TimeoutException e) {
-			e.printStackTrace();
-		}
-		Thread.sleep(4000);
+		Thread.sleep(2000);
+		//try {
+		Driver.get(prop.getProperty("url"));
+		//}catch(TimeoutException e) {
+			//e.printStackTrace();
+		//}
+		Thread.sleep(2000);
 		
 	}
 

@@ -33,7 +33,7 @@ public class MyNetworkPageFreeTest extends TestBase{
 		communityPageFree=new CommunityPageFree();
 		myNetworkPageFree=new MyNetworkPageFree();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		//testUtil.testWaitFourteen();
+		testUtil.testWaitFourteen();
 		//try {
 			//homePageFree.clickAcceptAllCookies();
 		//}catch(NoSuchElementException e) {
@@ -47,98 +47,98 @@ public class MyNetworkPageFreeTest extends TestBase{
 		//}
 		//testUtil.testWaitFour();
 		homePageFree.clickNetworkTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		homePageFree.clickNetworkTabTooltip();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 	
 	}
 	
 	@Test
 	public void myNetworkPageFreeTest()throws Exception {
 		myNetworkPageFree.clickSeachValue();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		myNetworkPageFree.enterSearchValue("Test");
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.clickCancelSearch();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		//Type of Message
 		try {
 		    myNetworkPageFree.clickTypeMessageDropDown();
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		try {
 		    myNetworkPageFree.selectTypeMessage();
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		try {
 		    myNetworkPageFree.selectTypeMessage();
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		try {
 		    myNetworkPageFree.clickTypeMessageDropDown();
 		}catch(ElementNotInteractableException e) {
 			e.printStackTrace();
 		}
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		//Area of Interest
 		myNetworkPageFree.clickAreaOfInterestDropDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.selectAreaOfInterest();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.selectAreaOfInterest();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.clickAreaOfInterestDropDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		//Sector
 		myNetworkPageFree.clickSectorDropDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.selectSector();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.selectSector();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.clickSectorDropDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		myNetworkPageFree.clickEveryOneDropDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		myNetworkPageFree.selectEveryOneMyOwnNetwork();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.selectEveryOneEveryOne();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.clickEveryOneDropDown();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		myNetworkPageFree.clickFavoiritesPosts();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.clickFavoiritesPosts();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		//MyNetwork
 		myNetworkPageFree.clickMyNetworkBtn();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 		myNetworkPageFree.clickMyNetworkTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		myNetworkPageFree.clickMyRequestsTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		testUtil.scrollDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		testUtil.scrollUp();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		myNetworkPageFree.clickSuggestionsForYouTab();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		testUtil.scrollDown();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		testUtil.scrollUp();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
 		myNetworkPageFree.clickAreaOfInterest();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		homePageFree.clickSignOutLink();
-		//testUtil.testWaitFour();
+		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
-		//testUtil.testWaitEight();
+		testUtil.testWaitEight();
 	}
 	
 	@AfterMethod
