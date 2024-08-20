@@ -40,14 +40,14 @@ public class TestBase {
 		if(browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 			//WebDriverManager.chromedriver().setup();
-			/*ChromeOptions options = new ChromeOptions();
+			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--window-size=1920,1080");
-			Driver=new ChromeDriver(options);*/
-			Driver=new ChromeDriver();		
+			Driver=new ChromeDriver(options);
+			//Driver=new ChromeDriver();		
 		}else if(browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
 			Driver=new FirefoxDriver();
@@ -57,13 +57,9 @@ public class TestBase {
 		Driver.manage().deleteAllCookies();
 		Driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		Driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		Thread.sleep(2000);
-		//try {
+		//Thread.sleep(2000);
 		Driver.get(prop.getProperty("url"));
-		//}catch(TimeoutException e) {
-			//e.printStackTrace();
-		//}
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		
 	}
 
