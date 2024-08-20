@@ -29,10 +29,10 @@ public class BusinessesPageFreeTest extends TestBase{
 		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
 		testUtil.testWaitFourteen();
-		  //homePageFree.clickAcceptAllCookies();
-		  //testUtil.testWaitEleven();
-		  //homePageFree.suitableAssignments();
-		  //testUtil.testWaitFour();
+		//homePageFree.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
+		//homePageFree.suitableAssignments();
+		//testUtil.testWaitFour();
 		homePageFree.clickBusinessesTab();
 		testUtil.testWaitEleven();
 				
@@ -47,19 +47,19 @@ public class BusinessesPageFreeTest extends TestBase{
 		testUtil.testWaitEight();
 		businessesPageFree.removeFilter();
 		testUtil.testWaitEight();
-		  //Sector-field removed
-		  //businessesPageFree.clickSector();
-		  //testUtil.testWaitTwo();
-		  //businessesPageFree.selectSector();
-		  //testUtil.testWaitFour();
-		  //businessesPageFree.clickSector();
-		  //testUtil.testWaitTwo();
-		  //businessesPageFree.clickSector();
-		  //testUtil.testWaitTwo();
-		  //businessesPageFree.selectSector();
-		  //testUtil.testWaitFour();
-		  //businessesPageFree.clickSector();
-		  //testUtil.testWaitTwo();
+		//Sector-field removed
+		//businessesPageFree.clickSector();
+		//testUtil.testWaitTwo();
+		//businessesPageFree.selectSector();
+		//testUtil.testWaitFour();
+		//businessesPageFree.clickSector();
+		//testUtil.testWaitTwo();
+		//businessesPageFree.clickSector();
+		//testUtil.testWaitTwo();
+		//businessesPageFree.selectSector();
+		//testUtil.testWaitFour();
+		//businessesPageFree.clickSector();
+		//testUtil.testWaitTwo();
 		businessesPageFree.clickSortingDropDown();
 		testUtil.testWaitFour();
 		businessesPageFree.sortingZtoA();
@@ -75,7 +75,7 @@ public class BusinessesPageFreeTest extends TestBase{
 		homePageFree.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePageFree.clickSignOutBtn();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		
 	}
 	
