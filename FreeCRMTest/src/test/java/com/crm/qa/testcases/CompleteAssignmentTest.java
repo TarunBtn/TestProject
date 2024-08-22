@@ -55,7 +55,7 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.uploadFile("D:\\Assignment.docx");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		testUtil.scrollUp();
 		testUtil.testWaitEight();
 		//checkCommandPage.clickFillInComplete();
